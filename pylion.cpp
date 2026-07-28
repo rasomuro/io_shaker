@@ -14,12 +14,12 @@ double ras_solver (
     double fraction,
     PyObject *lb,
     PyObject *ub,
-    int constraint_enforcement,
     bool inertial,
-    bool allinone,
     double reducefactor,
     double expandfactor,
     int iterations_to_restart,
+    int constraint_enforcement,
+    bool allinone,
     bool random_around_middle
 ) {
     FPython wrapped_function(function, dimension, lb, ub);

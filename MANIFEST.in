@@ -11,6 +11,6 @@ global-exclude lion.h lion.cpp
 global-exclude __pycache__
 global-exclude Makefile
 global-exclude test
-global-exclude venv
+global-exclude venv test_venv
 global-exclude build cbuild
 global-exclude CMakeLists.txt

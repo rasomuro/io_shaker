@@ -18,11 +18,11 @@ extern double ras_solver (
     double fraction = .1,
     PyObject *lb = NULL,
     PyObject *ub = NULL,
-    int constraint_enforcement = 0,
     bool inertial = false,
-    bool allinone = false,
     double reducefactor = .9,
     double expandfactor = -1.0,
     int iterations_to_restart = -1,
+    int constraint_enforcement = 0,
+    bool allinone = false,
     bool random_around_middle = false
 );

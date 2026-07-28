@@ -9,13 +9,13 @@ double solver (
     Function &function,
     double *best_x,
     int seed,
-    double fraction,
-    int constraint_enforcement,
     bool inertial,
-    bool allinone,
+    double fraction,
     double reducefactor,
     double expandfactor,
     int iterations_to_restart,
+    int constraint_enforcement,
+    bool allinone,
     bool random_around_middle
 ) {
     RASHSolver solver(function, seed, fraction, inertial, allinone, reducefactor, expandfactor, iterations_to_restart, random_around_middle);

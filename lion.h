@@ -9,12 +9,12 @@ extern double solver (
     Function &function,
     double *best_x,
     int seed = 0,
-    double fraction = .1,
-    int constraint_enforcement = 0,
     bool inertial = false,
-    bool allinone = false,
+    double fraction = .1,
     double reducefactor = .9,
     double expandfactor = -1.0,
     int iterations_to_restart = -1,
+    int constraint_enforcement = 0,
+    bool allinone = false,
     bool random_around_middle = false
 );

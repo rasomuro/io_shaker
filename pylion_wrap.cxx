@@ -3848,12 +3848,12 @@ SWIGINTERN PyObject *_wrap_ras_solver__SWIG_0(PyObject *self, Py_ssize_t nobjs, 
   double arg5 ;
   PyObject *arg6 = 0 ;
   PyObject *arg7 = 0 ;
-  int arg8 ;
-  bool arg9 ;
-  bool arg10 ;
-  double arg11 ;
-  double arg12 ;
-  int arg13 ;
+  bool arg8 ;
+  double arg9 ;
+  double arg10 ;
+  int arg11 ;
+  int arg12 ;
+  bool arg13 ;
   bool arg14 ;
   int val2 ;
   int ecode2 = 0 ;
@@ -3861,17 +3861,17 @@ SWIGINTERN PyObject *_wrap_ras_solver__SWIG_0(PyObject *self, Py_ssize_t nobjs, 
   int ecode4 = 0 ;
   double val5 ;
   int ecode5 = 0 ;
-  int val8 ;
+  bool val8 ;
   int ecode8 = 0 ;
-  bool val9 ;
+  double val9 ;
   int ecode9 = 0 ;
-  bool val10 ;
+  double val10 ;
   int ecode10 = 0 ;
-  double val11 ;
+  int val11 ;
   int ecode11 = 0 ;
-  double val12 ;
+  int val12 ;
   int ecode12 = 0 ;
-  int val13 ;
+  bool val13 ;
   int ecode13 = 0 ;
   bool val14 ;
   int ecode14 = 0 ;
@@ -3898,36 +3898,36 @@ SWIGINTERN PyObject *_wrap_ras_solver__SWIG_0(PyObject *self, Py_ssize_t nobjs, 
   arg5 = static_cast< double >(val5);
   arg6 = swig_obj[5];
   arg7 = swig_obj[6];
-  ecode8 = SWIG_AsVal_int(swig_obj[7], &val8);
+  ecode8 = SWIG_AsVal_bool(swig_obj[7], &val8);
   if (!SWIG_IsOK(ecode8)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode8), "in method '" "ras_solver" "', argument " "8"" of type '" "int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode8), "in method '" "ras_solver" "', argument " "8"" of type '" "bool""'");
   } 
-  arg8 = static_cast< int >(val8);
-  ecode9 = SWIG_AsVal_bool(swig_obj[8], &val9);
+  arg8 = static_cast< bool >(val8);
+  ecode9 = SWIG_AsVal_double(swig_obj[8], &val9);
   if (!SWIG_IsOK(ecode9)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode9), "in method '" "ras_solver" "', argument " "9"" of type '" "bool""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode9), "in method '" "ras_solver" "', argument " "9"" of type '" "double""'");
   } 
-  arg9 = static_cast< bool >(val9);
-  ecode10 = SWIG_AsVal_bool(swig_obj[9], &val10);
+  arg9 = static_cast< double >(val9);
+  ecode10 = SWIG_AsVal_double(swig_obj[9], &val10);
   if (!SWIG_IsOK(ecode10)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode10), "in method '" "ras_solver" "', argument " "10"" of type '" "bool""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode10), "in method '" "ras_solver" "', argument " "10"" of type '" "double""'");
   } 
-  arg10 = static_cast< bool >(val10);
-  ecode11 = SWIG_AsVal_double(swig_obj[10], &val11);
+  arg10 = static_cast< double >(val10);
+  ecode11 = SWIG_AsVal_int(swig_obj[10], &val11);
   if (!SWIG_IsOK(ecode11)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode11), "in method '" "ras_solver" "', argument " "11"" of type '" "double""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode11), "in method '" "ras_solver" "', argument " "11"" of type '" "int""'");
   } 
-  arg11 = static_cast< double >(val11);
-  ecode12 = SWIG_AsVal_double(swig_obj[11], &val12);
+  arg11 = static_cast< int >(val11);
+  ecode12 = SWIG_AsVal_int(swig_obj[11], &val12);
   if (!SWIG_IsOK(ecode12)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode12), "in method '" "ras_solver" "', argument " "12"" of type '" "double""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode12), "in method '" "ras_solver" "', argument " "12"" of type '" "int""'");
   } 
-  arg12 = static_cast< double >(val12);
-  ecode13 = SWIG_AsVal_int(swig_obj[12], &val13);
+  arg12 = static_cast< int >(val12);
+  ecode13 = SWIG_AsVal_bool(swig_obj[12], &val13);
   if (!SWIG_IsOK(ecode13)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode13), "in method '" "ras_solver" "', argument " "13"" of type '" "int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode13), "in method '" "ras_solver" "', argument " "13"" of type '" "bool""'");
   } 
-  arg13 = static_cast< int >(val13);
+  arg13 = static_cast< bool >(val13);
   ecode14 = SWIG_AsVal_bool(swig_obj[13], &val14);
   if (!SWIG_IsOK(ecode14)) {
     SWIG_exception_fail(SWIG_ArgError(ecode14), "in method '" "ras_solver" "', argument " "14"" of type '" "bool""'");
@@ -3950,29 +3950,29 @@ SWIGINTERN PyObject *_wrap_ras_solver__SWIG_1(PyObject *self, Py_ssize_t nobjs, 
   double arg5 ;
   PyObject *arg6 = 0 ;
   PyObject *arg7 = 0 ;
-  int arg8 ;
-  bool arg9 ;
-  bool arg10 ;
-  double arg11 ;
-  double arg12 ;
-  int arg13 ;
+  bool arg8 ;
+  double arg9 ;
+  double arg10 ;
+  int arg11 ;
+  int arg12 ;
+  bool arg13 ;
   int val2 ;
   int ecode2 = 0 ;
   int val4 ;
   int ecode4 = 0 ;
   double val5 ;
   int ecode5 = 0 ;
-  int val8 ;
+  bool val8 ;
   int ecode8 = 0 ;
-  bool val9 ;
+  double val9 ;
   int ecode9 = 0 ;
-  bool val10 ;
+  double val10 ;
   int ecode10 = 0 ;
-  double val11 ;
+  int val11 ;
   int ecode11 = 0 ;
-  double val12 ;
+  int val12 ;
   int ecode12 = 0 ;
-  int val13 ;
+  bool val13 ;
   int ecode13 = 0 ;
   double result;
   
@@ -3997,36 +3997,36 @@ SWIGINTERN PyObject *_wrap_ras_solver__SWIG_1(PyObject *self, Py_ssize_t nobjs, 
   arg5 = static_cast< double >(val5);
   arg6 = swig_obj[5];
   arg7 = swig_obj[6];
-  ecode8 = SWIG_AsVal_int(swig_obj[7], &val8);
+  ecode8 = SWIG_AsVal_bool(swig_obj[7], &val8);
   if (!SWIG_IsOK(ecode8)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode8), "in method '" "ras_solver" "', argument " "8"" of type '" "int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode8), "in method '" "ras_solver" "', argument " "8"" of type '" "bool""'");
   } 
-  arg8 = static_cast< int >(val8);
-  ecode9 = SWIG_AsVal_bool(swig_obj[8], &val9);
+  arg8 = static_cast< bool >(val8);
+  ecode9 = SWIG_AsVal_double(swig_obj[8], &val9);
   if (!SWIG_IsOK(ecode9)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode9), "in method '" "ras_solver" "', argument " "9"" of type '" "bool""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode9), "in method '" "ras_solver" "', argument " "9"" of type '" "double""'");
   } 
-  arg9 = static_cast< bool >(val9);
-  ecode10 = SWIG_AsVal_bool(swig_obj[9], &val10);
+  arg9 = static_cast< double >(val9);
+  ecode10 = SWIG_AsVal_double(swig_obj[9], &val10);
   if (!SWIG_IsOK(ecode10)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode10), "in method '" "ras_solver" "', argument " "10"" of type '" "bool""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode10), "in method '" "ras_solver" "', argument " "10"" of type '" "double""'");
   } 
-  arg10 = static_cast< bool >(val10);
-  ecode11 = SWIG_AsVal_double(swig_obj[10], &val11);
+  arg10 = static_cast< double >(val10);
+  ecode11 = SWIG_AsVal_int(swig_obj[10], &val11);
   if (!SWIG_IsOK(ecode11)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode11), "in method '" "ras_solver" "', argument " "11"" of type '" "double""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode11), "in method '" "ras_solver" "', argument " "11"" of type '" "int""'");
   } 
-  arg11 = static_cast< double >(val11);
-  ecode12 = SWIG_AsVal_double(swig_obj[11], &val12);
+  arg11 = static_cast< int >(val11);
+  ecode12 = SWIG_AsVal_int(swig_obj[11], &val12);
   if (!SWIG_IsOK(ecode12)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode12), "in method '" "ras_solver" "', argument " "12"" of type '" "double""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode12), "in method '" "ras_solver" "', argument " "12"" of type '" "int""'");
   } 
-  arg12 = static_cast< double >(val12);
-  ecode13 = SWIG_AsVal_int(swig_obj[12], &val13);
+  arg12 = static_cast< int >(val12);
+  ecode13 = SWIG_AsVal_bool(swig_obj[12], &val13);
   if (!SWIG_IsOK(ecode13)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode13), "in method '" "ras_solver" "', argument " "13"" of type '" "int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode13), "in method '" "ras_solver" "', argument " "13"" of type '" "bool""'");
   } 
-  arg13 = static_cast< int >(val13);
+  arg13 = static_cast< bool >(val13);
   result = (double)ras_solver(arg1,arg2,arg3,arg4,arg5,arg6,arg7,arg8,arg9,arg10,arg11,arg12,arg13);
   resultobj = SWIG_From_double(static_cast< double >(result));
   return resultobj;
@@ -4044,26 +4044,26 @@ SWIGINTERN PyObject *_wrap_ras_solver__SWIG_2(PyObject *self, Py_ssize_t nobjs, 
   double arg5 ;
   PyObject *arg6 = 0 ;
   PyObject *arg7 = 0 ;
-  int arg8 ;
-  bool arg9 ;
-  bool arg10 ;
-  double arg11 ;
-  double arg12 ;
+  bool arg8 ;
+  double arg9 ;
+  double arg10 ;
+  int arg11 ;
+  int arg12 ;
   int val2 ;
   int ecode2 = 0 ;
   int val4 ;
   int ecode4 = 0 ;
   double val5 ;
   int ecode5 = 0 ;
-  int val8 ;
+  bool val8 ;
   int ecode8 = 0 ;
-  bool val9 ;
+  double val9 ;
   int ecode9 = 0 ;
-  bool val10 ;
+  double val10 ;
   int ecode10 = 0 ;
-  double val11 ;
+  int val11 ;
   int ecode11 = 0 ;
-  double val12 ;
+  int val12 ;
   int ecode12 = 0 ;
   double result;
   
@@ -4088,31 +4088,31 @@ SWIGINTERN PyObject *_wrap_ras_solver__SWIG_2(PyObject *self, Py_ssize_t nobjs, 
   arg5 = static_cast< double >(val5);
   arg6 = swig_obj[5];
   arg7 = swig_obj[6];
-  ecode8 = SWIG_AsVal_int(swig_obj[7], &val8);
+  ecode8 = SWIG_AsVal_bool(swig_obj[7], &val8);
   if (!SWIG_IsOK(ecode8)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode8), "in method '" "ras_solver" "', argument " "8"" of type '" "int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode8), "in method '" "ras_solver" "', argument " "8"" of type '" "bool""'");
   } 
-  arg8 = static_cast< int >(val8);
-  ecode9 = SWIG_AsVal_bool(swig_obj[8], &val9);
+  arg8 = static_cast< bool >(val8);
+  ecode9 = SWIG_AsVal_double(swig_obj[8], &val9);
   if (!SWIG_IsOK(ecode9)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode9), "in method '" "ras_solver" "', argument " "9"" of type '" "bool""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode9), "in method '" "ras_solver" "', argument " "9"" of type '" "double""'");
   } 
-  arg9 = static_cast< bool >(val9);
-  ecode10 = SWIG_AsVal_bool(swig_obj[9], &val10);
+  arg9 = static_cast< double >(val9);
+  ecode10 = SWIG_AsVal_double(swig_obj[9], &val10);
   if (!SWIG_IsOK(ecode10)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode10), "in method '" "ras_solver" "', argument " "10"" of type '" "bool""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode10), "in method '" "ras_solver" "', argument " "10"" of type '" "double""'");
   } 
-  arg10 = static_cast< bool >(val10);
-  ecode11 = SWIG_AsVal_double(swig_obj[10], &val11);
+  arg10 = static_cast< double >(val10);
+  ecode11 = SWIG_AsVal_int(swig_obj[10], &val11);
   if (!SWIG_IsOK(ecode11)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode11), "in method '" "ras_solver" "', argument " "11"" of type '" "double""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode11), "in method '" "ras_solver" "', argument " "11"" of type '" "int""'");
   } 
-  arg11 = static_cast< double >(val11);
-  ecode12 = SWIG_AsVal_double(swig_obj[11], &val12);
+  arg11 = static_cast< int >(val11);
+  ecode12 = SWIG_AsVal_int(swig_obj[11], &val12);
   if (!SWIG_IsOK(ecode12)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode12), "in method '" "ras_solver" "', argument " "12"" of type '" "double""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode12), "in method '" "ras_solver" "', argument " "12"" of type '" "int""'");
   } 
-  arg12 = static_cast< double >(val12);
+  arg12 = static_cast< int >(val12);
   result = (double)ras_solver(arg1,arg2,arg3,arg4,arg5,arg6,arg7,arg8,arg9,arg10,arg11,arg12);
   resultobj = SWIG_From_double(static_cast< double >(result));
   return resultobj;
@@ -4130,23 +4130,23 @@ SWIGINTERN PyObject *_wrap_ras_solver__SWIG_3(PyObject *self, Py_ssize_t nobjs, 
   double arg5 ;
   PyObject *arg6 = 0 ;
   PyObject *arg7 = 0 ;
-  int arg8 ;
-  bool arg9 ;
-  bool arg10 ;
-  double arg11 ;
+  bool arg8 ;
+  double arg9 ;
+  double arg10 ;
+  int arg11 ;
   int val2 ;
   int ecode2 = 0 ;
   int val4 ;
   int ecode4 = 0 ;
   double val5 ;
   int ecode5 = 0 ;
-  int val8 ;
+  bool val8 ;
   int ecode8 = 0 ;
-  bool val9 ;
+  double val9 ;
   int ecode9 = 0 ;
-  bool val10 ;
+  double val10 ;
   int ecode10 = 0 ;
-  double val11 ;
+  int val11 ;
   int ecode11 = 0 ;
   double result;
   
@@ -4171,26 +4171,26 @@ SWIGINTERN PyObject *_wrap_ras_solver__SWIG_3(PyObject *self, Py_ssize_t nobjs, 
   arg5 = static_cast< double >(val5);
   arg6 = swig_obj[5];
   arg7 = swig_obj[6];
-  ecode8 = SWIG_AsVal_int(swig_obj[7], &val8);
+  ecode8 = SWIG_AsVal_bool(swig_obj[7], &val8);
   if (!SWIG_IsOK(ecode8)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode8), "in method '" "ras_solver" "', argument " "8"" of type '" "int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode8), "in method '" "ras_solver" "', argument " "8"" of type '" "bool""'");
   } 
-  arg8 = static_cast< int >(val8);
-  ecode9 = SWIG_AsVal_bool(swig_obj[8], &val9);
+  arg8 = static_cast< bool >(val8);
+  ecode9 = SWIG_AsVal_double(swig_obj[8], &val9);
   if (!SWIG_IsOK(ecode9)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode9), "in method '" "ras_solver" "', argument " "9"" of type '" "bool""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode9), "in method '" "ras_solver" "', argument " "9"" of type '" "double""'");
   } 
-  arg9 = static_cast< bool >(val9);
-  ecode10 = SWIG_AsVal_bool(swig_obj[9], &val10);
+  arg9 = static_cast< double >(val9);
+  ecode10 = SWIG_AsVal_double(swig_obj[9], &val10);
   if (!SWIG_IsOK(ecode10)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode10), "in method '" "ras_solver" "', argument " "10"" of type '" "bool""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode10), "in method '" "ras_solver" "', argument " "10"" of type '" "double""'");
   } 
-  arg10 = static_cast< bool >(val10);
-  ecode11 = SWIG_AsVal_double(swig_obj[10], &val11);
+  arg10 = static_cast< double >(val10);
+  ecode11 = SWIG_AsVal_int(swig_obj[10], &val11);
   if (!SWIG_IsOK(ecode11)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode11), "in method '" "ras_solver" "', argument " "11"" of type '" "double""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode11), "in method '" "ras_solver" "', argument " "11"" of type '" "int""'");
   } 
-  arg11 = static_cast< double >(val11);
+  arg11 = static_cast< int >(val11);
   result = (double)ras_solver(arg1,arg2,arg3,arg4,arg5,arg6,arg7,arg8,arg9,arg10,arg11);
   resultobj = SWIG_From_double(static_cast< double >(result));
   return resultobj;
@@ -4208,20 +4208,20 @@ SWIGINTERN PyObject *_wrap_ras_solver__SWIG_4(PyObject *self, Py_ssize_t nobjs, 
   double arg5 ;
   PyObject *arg6 = 0 ;
   PyObject *arg7 = 0 ;
-  int arg8 ;
-  bool arg9 ;
-  bool arg10 ;
+  bool arg8 ;
+  double arg9 ;
+  double arg10 ;
   int val2 ;
   int ecode2 = 0 ;
   int val4 ;
   int ecode4 = 0 ;
   double val5 ;
   int ecode5 = 0 ;
-  int val8 ;
+  bool val8 ;
   int ecode8 = 0 ;
-  bool val9 ;
+  double val9 ;
   int ecode9 = 0 ;
-  bool val10 ;
+  double val10 ;
   int ecode10 = 0 ;
   double result;
   
@@ -4246,21 +4246,21 @@ SWIGINTERN PyObject *_wrap_ras_solver__SWIG_4(PyObject *self, Py_ssize_t nobjs, 
   arg5 = static_cast< double >(val5);
   arg6 = swig_obj[5];
   arg7 = swig_obj[6];
-  ecode8 = SWIG_AsVal_int(swig_obj[7], &val8);
+  ecode8 = SWIG_AsVal_bool(swig_obj[7], &val8);
   if (!SWIG_IsOK(ecode8)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode8), "in method '" "ras_solver" "', argument " "8"" of type '" "int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode8), "in method '" "ras_solver" "', argument " "8"" of type '" "bool""'");
   } 
-  arg8 = static_cast< int >(val8);
-  ecode9 = SWIG_AsVal_bool(swig_obj[8], &val9);
+  arg8 = static_cast< bool >(val8);
+  ecode9 = SWIG_AsVal_double(swig_obj[8], &val9);
   if (!SWIG_IsOK(ecode9)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode9), "in method '" "ras_solver" "', argument " "9"" of type '" "bool""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode9), "in method '" "ras_solver" "', argument " "9"" of type '" "double""'");
   } 
-  arg9 = static_cast< bool >(val9);
-  ecode10 = SWIG_AsVal_bool(swig_obj[9], &val10);
+  arg9 = static_cast< double >(val9);
+  ecode10 = SWIG_AsVal_double(swig_obj[9], &val10);
   if (!SWIG_IsOK(ecode10)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode10), "in method '" "ras_solver" "', argument " "10"" of type '" "bool""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode10), "in method '" "ras_solver" "', argument " "10"" of type '" "double""'");
   } 
-  arg10 = static_cast< bool >(val10);
+  arg10 = static_cast< double >(val10);
   result = (double)ras_solver(arg1,arg2,arg3,arg4,arg5,arg6,arg7,arg8,arg9,arg10);
   resultobj = SWIG_From_double(static_cast< double >(result));
   return resultobj;
@@ -4278,17 +4278,17 @@ SWIGINTERN PyObject *_wrap_ras_solver__SWIG_5(PyObject *self, Py_ssize_t nobjs, 
   double arg5 ;
   PyObject *arg6 = 0 ;
   PyObject *arg7 = 0 ;
-  int arg8 ;
-  bool arg9 ;
+  bool arg8 ;
+  double arg9 ;
   int val2 ;
   int ecode2 = 0 ;
   int val4 ;
   int ecode4 = 0 ;
   double val5 ;
   int ecode5 = 0 ;
-  int val8 ;
+  bool val8 ;
   int ecode8 = 0 ;
-  bool val9 ;
+  double val9 ;
   int ecode9 = 0 ;
   double result;
   
@@ -4313,16 +4313,16 @@ SWIGINTERN PyObject *_wrap_ras_solver__SWIG_5(PyObject *self, Py_ssize_t nobjs, 
   arg5 = static_cast< double >(val5);
   arg6 = swig_obj[5];
   arg7 = swig_obj[6];
-  ecode8 = SWIG_AsVal_int(swig_obj[7], &val8);
+  ecode8 = SWIG_AsVal_bool(swig_obj[7], &val8);
   if (!SWIG_IsOK(ecode8)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode8), "in method '" "ras_solver" "', argument " "8"" of type '" "int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode8), "in method '" "ras_solver" "', argument " "8"" of type '" "bool""'");
   } 
-  arg8 = static_cast< int >(val8);
-  ecode9 = SWIG_AsVal_bool(swig_obj[8], &val9);
+  arg8 = static_cast< bool >(val8);
+  ecode9 = SWIG_AsVal_double(swig_obj[8], &val9);
   if (!SWIG_IsOK(ecode9)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode9), "in method '" "ras_solver" "', argument " "9"" of type '" "bool""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode9), "in method '" "ras_solver" "', argument " "9"" of type '" "double""'");
   } 
-  arg9 = static_cast< bool >(val9);
+  arg9 = static_cast< double >(val9);
   result = (double)ras_solver(arg1,arg2,arg3,arg4,arg5,arg6,arg7,arg8,arg9);
   resultobj = SWIG_From_double(static_cast< double >(result));
   return resultobj;
@@ -4340,14 +4340,14 @@ SWIGINTERN PyObject *_wrap_ras_solver__SWIG_6(PyObject *self, Py_ssize_t nobjs, 
   double arg5 ;
   PyObject *arg6 = 0 ;
   PyObject *arg7 = 0 ;
-  int arg8 ;
+  bool arg8 ;
   int val2 ;
   int ecode2 = 0 ;
   int val4 ;
   int ecode4 = 0 ;
   double val5 ;
   int ecode5 = 0 ;
-  int val8 ;
+  bool val8 ;
   int ecode8 = 0 ;
   double result;
   
@@ -4372,11 +4372,11 @@ SWIGINTERN PyObject *_wrap_ras_solver__SWIG_6(PyObject *self, Py_ssize_t nobjs, 
   arg5 = static_cast< double >(val5);
   arg6 = swig_obj[5];
   arg7 = swig_obj[6];
-  ecode8 = SWIG_AsVal_int(swig_obj[7], &val8);
+  ecode8 = SWIG_AsVal_bool(swig_obj[7], &val8);
   if (!SWIG_IsOK(ecode8)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode8), "in method '" "ras_solver" "', argument " "8"" of type '" "int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode8), "in method '" "ras_solver" "', argument " "8"" of type '" "bool""'");
   } 
-  arg8 = static_cast< int >(val8);
+  arg8 = static_cast< bool >(val8);
   result = (double)ras_solver(arg1,arg2,arg3,arg4,arg5,arg6,arg7,arg8);
   resultobj = SWIG_From_double(static_cast< double >(result));
   return resultobj;
@@ -4742,7 +4742,7 @@ SWIGINTERN PyObject *_wrap_ras_solver(PyObject *self, PyObject *args) {
                 _v = (argv[6] != 0);
                 if (_v) {
                   {
-                    int res = SWIG_AsVal_int(argv[7], NULL);
+                    int res = SWIG_AsVal_bool(argv[7], NULL);
                     _v = SWIG_CheckState(res);
                   }
                   if (_v) {
@@ -4782,12 +4782,12 @@ SWIGINTERN PyObject *_wrap_ras_solver(PyObject *self, PyObject *args) {
                 _v = (argv[6] != 0);
                 if (_v) {
                   {
-                    int res = SWIG_AsVal_int(argv[7], NULL);
+                    int res = SWIG_AsVal_bool(argv[7], NULL);
                     _v = SWIG_CheckState(res);
                   }
                   if (_v) {
                     {
-                      int res = SWIG_AsVal_bool(argv[8], NULL);
+                      int res = SWIG_AsVal_double(argv[8], NULL);
                       _v = SWIG_CheckState(res);
                     }
                     if (_v) {
@@ -4828,17 +4828,17 @@ SWIGINTERN PyObject *_wrap_ras_solver(PyObject *self, PyObject *args) {
                 _v = (argv[6] != 0);
                 if (_v) {
                   {
-                    int res = SWIG_AsVal_int(argv[7], NULL);
+                    int res = SWIG_AsVal_bool(argv[7], NULL);
                     _v = SWIG_CheckState(res);
                   }
                   if (_v) {
                     {
-                      int res = SWIG_AsVal_bool(argv[8], NULL);
+                      int res = SWIG_AsVal_double(argv[8], NULL);
                       _v = SWIG_CheckState(res);
                     }
                     if (_v) {
                       {
-                        int res = SWIG_AsVal_bool(argv[9], NULL);
+                        int res = SWIG_AsVal_double(argv[9], NULL);
                         _v = SWIG_CheckState(res);
                       }
                       if (_v) {
@@ -4880,22 +4880,22 @@ SWIGINTERN PyObject *_wrap_ras_solver(PyObject *self, PyObject *args) {
                 _v = (argv[6] != 0);
                 if (_v) {
                   {
-                    int res = SWIG_AsVal_int(argv[7], NULL);
+                    int res = SWIG_AsVal_bool(argv[7], NULL);
                     _v = SWIG_CheckState(res);
                   }
                   if (_v) {
                     {
-                      int res = SWIG_AsVal_bool(argv[8], NULL);
+                      int res = SWIG_AsVal_double(argv[8], NULL);
                       _v = SWIG_CheckState(res);
                     }
                     if (_v) {
                       {
-                        int res = SWIG_AsVal_bool(argv[9], NULL);
+                        int res = SWIG_AsVal_double(argv[9], NULL);
                         _v = SWIG_CheckState(res);
                       }
                       if (_v) {
                         {
-                          int res = SWIG_AsVal_double(argv[10], NULL);
+                          int res = SWIG_AsVal_int(argv[10], NULL);
                           _v = SWIG_CheckState(res);
                         }
                         if (_v) {
@@ -4938,27 +4938,27 @@ SWIGINTERN PyObject *_wrap_ras_solver(PyObject *self, PyObject *args) {
                 _v = (argv[6] != 0);
                 if (_v) {
                   {
-                    int res = SWIG_AsVal_int(argv[7], NULL);
+                    int res = SWIG_AsVal_bool(argv[7], NULL);
                     _v = SWIG_CheckState(res);
                   }
                   if (_v) {
                     {
-                      int res = SWIG_AsVal_bool(argv[8], NULL);
+                      int res = SWIG_AsVal_double(argv[8], NULL);
                       _v = SWIG_CheckState(res);
                     }
                     if (_v) {
                       {
-                        int res = SWIG_AsVal_bool(argv[9], NULL);
+                        int res = SWIG_AsVal_double(argv[9], NULL);
                         _v = SWIG_CheckState(res);
                       }
                       if (_v) {
                         {
-                          int res = SWIG_AsVal_double(argv[10], NULL);
+                          int res = SWIG_AsVal_int(argv[10], NULL);
                           _v = SWIG_CheckState(res);
                         }
                         if (_v) {
                           {
-                            int res = SWIG_AsVal_double(argv[11], NULL);
+                            int res = SWIG_AsVal_int(argv[11], NULL);
                             _v = SWIG_CheckState(res);
                           }
                           if (_v) {
@@ -5002,32 +5002,32 @@ SWIGINTERN PyObject *_wrap_ras_solver(PyObject *self, PyObject *args) {
                 _v = (argv[6] != 0);
                 if (_v) {
                   {
-                    int res = SWIG_AsVal_int(argv[7], NULL);
+                    int res = SWIG_AsVal_bool(argv[7], NULL);
                     _v = SWIG_CheckState(res);
                   }
                   if (_v) {
                     {
-                      int res = SWIG_AsVal_bool(argv[8], NULL);
+                      int res = SWIG_AsVal_double(argv[8], NULL);
                       _v = SWIG_CheckState(res);
                     }
                     if (_v) {
                       {
-                        int res = SWIG_AsVal_bool(argv[9], NULL);
+                        int res = SWIG_AsVal_double(argv[9], NULL);
                         _v = SWIG_CheckState(res);
                       }
                       if (_v) {
                         {
-                          int res = SWIG_AsVal_double(argv[10], NULL);
+                          int res = SWIG_AsVal_int(argv[10], NULL);
                           _v = SWIG_CheckState(res);
                         }
                         if (_v) {
                           {
-                            int res = SWIG_AsVal_double(argv[11], NULL);
+                            int res = SWIG_AsVal_int(argv[11], NULL);
                             _v = SWIG_CheckState(res);
                           }
                           if (_v) {
                             {
-                              int res = SWIG_AsVal_int(argv[12], NULL);
+                              int res = SWIG_AsVal_bool(argv[12], NULL);
                               _v = SWIG_CheckState(res);
                             }
                             if (_v) {
@@ -5072,32 +5072,32 @@ SWIGINTERN PyObject *_wrap_ras_solver(PyObject *self, PyObject *args) {
                 _v = (argv[6] != 0);
                 if (_v) {
                   {
-                    int res = SWIG_AsVal_int(argv[7], NULL);
+                    int res = SWIG_AsVal_bool(argv[7], NULL);
                     _v = SWIG_CheckState(res);
                   }
                   if (_v) {
                     {
-                      int res = SWIG_AsVal_bool(argv[8], NULL);
+                      int res = SWIG_AsVal_double(argv[8], NULL);
                       _v = SWIG_CheckState(res);
                     }
                     if (_v) {
                       {
-                        int res = SWIG_AsVal_bool(argv[9], NULL);
+                        int res = SWIG_AsVal_double(argv[9], NULL);
                         _v = SWIG_CheckState(res);
                       }
                       if (_v) {
                         {
-                          int res = SWIG_AsVal_double(argv[10], NULL);
+                          int res = SWIG_AsVal_int(argv[10], NULL);
                           _v = SWIG_CheckState(res);
                         }
                         if (_v) {
                           {
-                            int res = SWIG_AsVal_double(argv[11], NULL);
+                            int res = SWIG_AsVal_int(argv[11], NULL);
                             _v = SWIG_CheckState(res);
                           }
                           if (_v) {
                             {
-                              int res = SWIG_AsVal_int(argv[12], NULL);
+                              int res = SWIG_AsVal_bool(argv[12], NULL);
                               _v = SWIG_CheckState(res);
                             }
                             if (_v) {
@@ -5126,13 +5126,13 @@ SWIGINTERN PyObject *_wrap_ras_solver(PyObject *self, PyObject *args) {
 fail:
   SWIG_Python_RaiseOrModifyTypeError("Wrong number or type of arguments for overloaded function 'ras_solver'.\n"
     "  Possible C/C++ prototypes are:\n"
-    "    ras_solver(PyObject *,int,PyObject *,int,double,PyObject *,PyObject *,int,bool,bool,double,double,int,bool)\n"
-    "    ras_solver(PyObject *,int,PyObject *,int,double,PyObject *,PyObject *,int,bool,bool,double,double,int)\n"
-    "    ras_solver(PyObject *,int,PyObject *,int,double,PyObject *,PyObject *,int,bool,bool,double,double)\n"
-    "    ras_solver(PyObject *,int,PyObject *,int,double,PyObject *,PyObject *,int,bool,bool,double)\n"
-    "    ras_solver(PyObject *,int,PyObject *,int,double,PyObject *,PyObject *,int,bool,bool)\n"
-    "    ras_solver(PyObject *,int,PyObject *,int,double,PyObject *,PyObject *,int,bool)\n"
-    "    ras_solver(PyObject *,int,PyObject *,int,double,PyObject *,PyObject *,int)\n"
+    "    ras_solver(PyObject *,int,PyObject *,int,double,PyObject *,PyObject *,bool,double,double,int,int,bool,bool)\n"
+    "    ras_solver(PyObject *,int,PyObject *,int,double,PyObject *,PyObject *,bool,double,double,int,int,bool)\n"
+    "    ras_solver(PyObject *,int,PyObject *,int,double,PyObject *,PyObject *,bool,double,double,int,int)\n"
+    "    ras_solver(PyObject *,int,PyObject *,int,double,PyObject *,PyObject *,bool,double,double,int)\n"
+    "    ras_solver(PyObject *,int,PyObject *,int,double,PyObject *,PyObject *,bool,double,double)\n"
+    "    ras_solver(PyObject *,int,PyObject *,int,double,PyObject *,PyObject *,bool,double)\n"
+    "    ras_solver(PyObject *,int,PyObject *,int,double,PyObject *,PyObject *,bool)\n"
     "    ras_solver(PyObject *,int,PyObject *,int,double,PyObject *,PyObject *)\n"
     "    ras_solver(PyObject *,int,PyObject *,int,double,PyObject *)\n"
     "    ras_solver(PyObject *,int,PyObject *,int,double)\n"

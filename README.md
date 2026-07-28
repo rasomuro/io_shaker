@@ -34,15 +34,33 @@ swig -python -c++ pylion.i
 The following cross-platform commands compile a standalone C++ library:
 
 ```sh
-cmake -S . -B build
-cmake --build build --config Release
+cmake -S . -B cbuild
+cmake --build cbuild --config Release
 ```
 
 ## Usage and example
 
 ### Python library
 
-See `test/test.py`.
+See `test/test.py`:
+
+```python
+from pylion import ras_solver
+
+# Function to be optimized
+def f(x: list[float]) -> float:
+    return (x[0]-.5)**2 + (x[1]-.45)**2
+
+# List to accommodate the function's minimizer
+best_x = [None]*2
+
+# Test the solvers 10 times with different seeds
+for seed in range(10):
+    best_y = ras_solver(f, 2, best_x, seed=seed)
+    print('BEST AFFINE', best_x, best_y)
+    best_y = ras_solver(f, 2, best_x, inertial=True, seed=seed)
+    print('BEST INERTIAL', best_x, best_y)
+```
 
 The function `ras_solver` accepts the following parameters:
 
@@ -57,9 +75,64 @@ The function `ras_solver` accepts the following parameters:
 - `reducefactor` (type `float`, default .9): search box reduction factor upon failed improvement.
 - `expandfactor` (type `float`, default 1.0/`reducefactor`): search box expansion factor upon succeeded improvement.
 
+It returns the minimum value (`float`).
+
 ### Native library
 
-See `test/test.cpp`. To compile, compile with `..` and `../libRSO` as include directories and link the object file with `../cbuild/libRSO.a`:
+See `test/test.cpp`:
+
+```c++
+#include <iostream>
+
+#include "function.h"
+#include "lion.h"
+
+using namespace std;
+
+class MyFunction: public Function {
+protected:
+    // variable holding the function's latest evaluation
+    double result_value;
+    // evaluation function
+    virtual const double *evaluate (const double *x);
+public:
+    // Constructor
+    MyFunction();
+};
+
+MyFunction::MyFunction():
+    // base constructor: domain and codomain dimensions, random rotations (useful for tests)
+    Function(2, 1, false)
+{
+    // Basic initialization: lower and upper bound for each coordinate
+    xmin[0] = xmin[1] = 0.0;
+    xmax[0] = xmax[1] = 1.0;
+}
+
+const double *MyFunction::evaluate(const double *x) {
+    double
+        x0 = x[0]-.5,
+        x1 = x[1]-.45;
+    result_value = x0*x0 + x1*x1;
+    // The function returns a pointer to the value
+    return &result_value;
+}
+
+int main() {
+    MyFunction f;
+    double best[2];
+    // Test the solvers ten times with different seeds
+    for (int seed = 0; seed < 10; seed++ ) {
+        double best_value = solver(f, best, seed);
+        cout << "BEST AFFINE " << best_value << " @ " << best[0] << ',' << best[1] << endl;
+        best_value = solver(f, best, seed, true);
+        cout << "BEST INERTIAL " << best_value << " @ " << best[0] << ',' << best[1] << endl;
+    }
+    return 0;
+}
+```
+
+To compile from inside `test`, add `..` and `../libRSO` as include directories and link the object file with `../cbuild/libRSO.a`:
 
 ```sh
 cd test
