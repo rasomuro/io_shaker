@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pylion"
+dynamic = ["requires-python", "version"]
+authors = [
+    {name = "Roberto Battiti", email = "roberto@intelligent-optimization.org"},
+    {name = "Mauro Brunato", email = "mauro.brunato@unitn.it"}
+]
+maintainers = [
+    {name = "Mauro Brunato", email = "mauro.brunato@unitn.it"}
+]
+description = "Python bindings to the LION continuous optimization library"
+readme = "README.md"
+# license = "CC BY-NC-SA 4.0"
+license-files = ["LICENSE.txt"]
+keywords = [
+    "optimization",
+    "LION"
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
+  "Topic :: Scientific/Engineering :: Mathematics",
+  "Programming Language :: Python :: 3"
+]
+
+[project.urls]
+Homepage = "https://intelligent-optimization.org"
+Documentation = "https://intelligent-optimization.org/pylion/"
+Repository = "https://github.com/rasomuro/pylion.git"
+Issues = "https://github.com/rasomuro/pylion/issues"
+Changelog = "https://github.com/rasomuro/pylion/blob/master/CHANGELOG.md"
+

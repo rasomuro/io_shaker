@@ -1,0 +1,11 @@
+venv
+*.o
+*.a
+*.so
+*.gch
+__pycache__
+.vscode
+cbuild/
+build/
+dist/
+*.egg-info/
