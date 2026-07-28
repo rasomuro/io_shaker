@@ -4,10 +4,25 @@
 
 ## Install
 
-### Python package
+### From PyPi
+
+Install the `pylion-co` package:
+
+```sh
+python -m pip install pylion-co
+```
+
+The package contains binding to a C++ library; therefore,
+a C++ compiler and Python development headers may be required
+if a suitable pre-compiled platform wheel is not found.
+
+In such case, please follow your platform's instructions to
+install the compiler and Python headers, then repeat the above command.
+
+### Source tree
 
 A C++ compiler and Python development headers are required when installing from
-the source tree or a source distribution. SWIG is not required because its
+the source tree. SWIG is not required because its
 generated files, `pylion.py` and `pylion_wrap.cxx`, are included in the package.
 
 ```sh

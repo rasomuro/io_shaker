@@ -3,10 +3,10 @@ requires = ["setuptools>=61", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "pylion"
+name = "pylion-co"
 dynamic = ["requires-python", "version"]
 authors = [
-    {name = "Roberto Battiti", email = "roberto@intelligent-optimization.org"},
+    {name = "Roberto Battiti"},
     {name = "Mauro Brunato", email = "mauro.brunato@unitn.it"}
 ]
 maintainers = [
