@@ -26,7 +26,7 @@ io_shaker_extension = Extension(
 
 setup(
     name="io_shaker",
-    version="0.2.2",
+    version="0.9.1",
     description="Python bindings for the Reactive Affine Shaker and Inertial Shaker libraries",
     long_description=(ROOT / "README.md").read_text(encoding="utf-8"),
     long_description_content_type="text/markdown",

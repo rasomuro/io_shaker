@@ -40,6 +40,12 @@ if a suitable pre-compiled platform wheel is not found.
 In such case, please follow your platform's instructions to
 install the compiler and Python headers, then repeat the above command.
 
+**Note**: while the official package name is `io-shaker`(with a dash), the import command requires an underscore:
+
+```python
+from io_shaker import reactive_affine_shaker, inertial_shaker
+```
+
 ### From the source tree
 
 A C++ compiler and Python development headers are required when installing from
