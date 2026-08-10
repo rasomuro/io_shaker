@@ -3,7 +3,7 @@
 
 #include "RASHSolver.h"
 
-#include "lion.h"
+#include "c_io_shaker.h"
 
 static double solver (
     Function &function,

@@ -7,9 +7,9 @@
 from sys import version_info as _swig_python_version_info
 # Import the low-level C/C++ module
 if getattr(globals().get("__spec__"), "parent", None) or __package__ or "." in __name__:
-    from . import _pylion
+    from . import _io_shaker
 else:
-    import _pylion
+    import _io_shaker
 
 try:
     import builtins as __builtin__
@@ -60,12 +60,12 @@ class _SwigNonDynamicMeta(type):
 
 
 def reactive_affine_shaker(function, dimension, seed=0, fraction=.1, lb=None, ub=None, reducefactor=.9, expandfactor=-1.0, iterations_to_restart=-1, constraint_enforcement=0, allinone=False, random_around_middle=False):
-    return _pylion.reactive_affine_shaker(function, dimension, seed, fraction, lb, ub, reducefactor, expandfactor, iterations_to_restart, constraint_enforcement, allinone, random_around_middle)
+    return _io_shaker.reactive_affine_shaker(function, dimension, seed, fraction, lb, ub, reducefactor, expandfactor, iterations_to_restart, constraint_enforcement, allinone, random_around_middle)
 
 def inertial_shaker(function, dimension, seed=0, fraction=.1, lb=None, ub=None, reducefactor=.9, expandfactor=-1.0, iterations_to_restart=-1, constraint_enforcement=0, allinone=False, random_around_middle=False):
-    return _pylion.inertial_shaker(function, dimension, seed, fraction, lb, ub, reducefactor, expandfactor, iterations_to_restart, constraint_enforcement, allinone, random_around_middle)
+    return _io_shaker.inertial_shaker(function, dimension, seed, fraction, lb, ub, reducefactor, expandfactor, iterations_to_restart, constraint_enforcement, allinone, random_around_middle)
 
-cvar = _pylion.cvar
+cvar = _io_shaker.cvar
 ENFORCE_INDEPENDENT = cvar.ENFORCE_INDEPENDENT
 ENFORCE_ALIGNED = cvar.ENFORCE_ALIGNED
 REBOUND_BORDER = cvar.REBOUND_BORDER

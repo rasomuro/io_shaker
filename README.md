@@ -1,6 +1,6 @@
-# pylion
+# io_shaker
 
-`pylion` provides Python bindings for the C++ Reactive Search Optimization library.
+`io_shaker` provides Python bindings for the C++ Reactive Search Optimization library.
 The package exposes two local search heuristics for continuous function optimization:
 
 - the **inertial shaker** [1, 3]: a "search box" is maintained around the
@@ -27,10 +27,10 @@ LION association, Italy, 2026. Downloadable at https://intelligent-optimization.
 
 ### From PyPi
 
-Install the `pylion-co` package:
+Install the `io_shaker` package:
 
 ```sh
-python -m pip install pylion-co
+python -m pip install io_shaker
 ```
 
 The package contains binding to a C++ library; therefore,
@@ -44,7 +44,7 @@ install the compiler and Python headers, then repeat the above command.
 
 A C++ compiler and Python development headers are required when installing from
 the source tree. SWIG is not required because its
-generated files, `pylion.py` and `pylion_wrap.cxx`, are included in the package.
+generated files, `io_shaker.py` and `io_shaker_wrap.cxx`, are included in the package.
 
 ```sh
 python -m pip install .
@@ -56,13 +56,13 @@ To build a wheel for the current Python and platform:
 python -m pip wheel .
 ```
 
-Setuptools selects the platform compiler and gives the native `_pylion`
+Setuptools selects the platform compiler and gives the native `_io_shaker`
 extension the correct filename for Linux, macOS, or Windows.
 
-If needed, the SWIG-generated files `pylion.py` and `pylion_wrap.cxx` can be recreated by
+If needed, the SWIG-generated files `io_shaker.py` and `io_shaker_wrap.cxx` can be recreated by
 
 ```sh
-swig -python -c++ pylion.i
+swig -python -c++ io_shaker.i
 ```
 
 ### Native library
@@ -82,7 +82,7 @@ cmake --build cbuild --config Release
 See `test/test.py`:
 
 ```python
-from pylion import reactive_affine_shaker, inertial_shaker
+from io_shaker import reactive_affine_shaker, inertial_shaker
 
 # Function to be optimized
 def f(x: list[float]) -> float:
@@ -90,10 +90,10 @@ def f(x: list[float]) -> float:
 
 # Test the solvers 10 times with different seeds
 for seed in range(10):
-    best_x, best_y = reactive_affine_shaker(f, 2, seed=seed)
-    print('BEST AFFINE', best_x, best_y)
-    best_x, best_y = inertial_shaker(f, 2, seed=seed)
-    print('BEST INERTIAL', best_x, best_y)
+    best_x, best_f = reactive_affine_shaker(f, 2, seed=seed)
+    print('BEST AFFINE', best_f, best_y)
+    best_x, best_f = inertial_shaker(f, 2, seed=seed)
+    print('BEST INERTIAL', best_x, best_f)
 ```
 
 The two functions `reactive_affine_shaker` and `inertial_shaker` accept the following parameters:
@@ -117,7 +117,7 @@ See `test/test.cpp`:
 #include <iostream>
 
 #include "function.h"
-#include "lion.h"
+#include "c_io_shaker.h"
 
 using namespace std;
 
@@ -152,24 +152,24 @@ const double *MyFunction::evaluate(const double *x) {
 
 int main() {
     MyFunction f;
-    double best[2];
+    double best_x[2];
     // Test the solvers ten times with different seeds
     for (int seed = 0; seed < 10; seed++ ) {
-        double best_value = reactive_affine_shaker(f, best, seed);
-        cout << "BEST AFFINE " << best_value << " @ " << best[0] << ',' << best[1] << endl;
-        best_value = inertial_shaker(f, best, seed);
-        cout << "BEST INERTIAL " << best_value << " @ " << best[0] << ',' << best[1] << endl;
+        double best_f = reactive_affine_shaker(f, best_x, seed);
+        cout << "BEST AFFINE " << best_f << " @ " << best_x[0] << ',' << best_x[1] << endl;
+        best_f = inertial_shaker(f, best_x, seed);
+        cout << "BEST INERTIAL " << best_f << " @ " << best_x[0] << ',' << best_x[1] << endl;
     }
     return 0;
 }
 ```
 
-To compile from inside `test`, add `..` and `../libRSO` as include directories and link the object file with `../cbuild/libRSO.a`:
+To compile from inside `test`, add `..` and `../libRSO` as include directories and link the object file with `../cbuild/libIOShaker.a`:
 
 ```sh
 cd test
 g++ -c -I.. -I../libRSO test.cpp
-g++ -o test -L../cbuild test.o -lRSO
+g++ -o test -L../cbuild test.o -lIOShaker
 ./test
 ```
 

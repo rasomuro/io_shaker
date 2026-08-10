@@ -1,13 +1,13 @@
 include README.md
 include LICENSE.txt
-include pylion.h
-include pylion.cpp
-include pylion.i
-include pylion_wrap.cxx
+include io_shaker.h
+include io_shaker.cpp
+include io_shaker.i
+include io_shaker_wrap.cxx
 recursive-include function *.cpp *.h
 recursive-include libRSO *.cpp *.h
 global-exclude *.o *.a *.so *.dylib *.dll *.pyc
-global-exclude lion.h lion.cpp
+global-exclude c_io_shaker.h c_io_shaker.cpp
 global-exclude __pycache__
 global-exclude Makefile
 global-exclude test

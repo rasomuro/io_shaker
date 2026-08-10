@@ -4,7 +4,7 @@
 #include <iostream>
 
 #include "function.h"
-#include "lion.h"
+#include "c_io_shaker.h"
 
 using namespace std;
 
@@ -39,13 +39,13 @@ const double *MyFunction::evaluate(const double *x) {
 
 int main() {
     MyFunction f;
-    double best[2];
+    double best_x[2];
     // Test the solvers ten times with different seeds
     for (int seed = 0; seed < 10; seed++ ) {
-        double best_value = reactive_affine_shaker(f, best, seed);
-        cout << "BEST AFFINE " << best_value << " @ " << best[0] << ',' << best[1] << endl;
-        best_value = inertial_shaker(f, best, seed);
-        cout << "BEST INERTIAL " << best_value << " @ " << best[0] << ',' << best[1] << endl;
+        double best_f = reactive_affine_shaker(f, best_x, seed);
+        cout << "BEST AFFINE " << best_f << " @ " << best_x[0] << ',' << best_x[1] << endl;
+        best_f = inertial_shaker(f, best_x, seed);
+        cout << "BEST INERTIAL " << best_f << " @ " << best_x[0] << ',' << best_x[1] << endl;
     }
     return 0;
 }

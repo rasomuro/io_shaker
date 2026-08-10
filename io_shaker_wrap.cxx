@@ -11,7 +11,7 @@
 #define SWIGPYTHON
 #define SWIG_PYTHON_DIRECTOR_NO_VTABLE
 
-#define SWIG_name    "_pylion"
+#define SWIG_name    "_io_shaker"
 /* -----------------------------------------------------------------------------
  *  This section contains generic SWIG labels for method/variable
  *  declarations/attributes, and other compiler dependent labels.
@@ -3451,13 +3451,13 @@ static swig_module_info swig_module = {swig_types, 1, 0, 0, 0, 0};
 #define SWIG_TypeQuery SWIG_Python_TypeQuery
 
 /*-----------------------------------------------
-              @(target):= _pylion.so
+              @(target):= _io_shaker.so
   ------------------------------------------------*/
 #if PY_VERSION_HEX >= 0x03000000
-#  define SWIG_init    PyInit__pylion
+#  define SWIG_init    PyInit__io_shaker
 
 #else
-#  define SWIG_init    init_pylion
+#  define SWIG_init    init_io_shaker
 
 #endif
 
@@ -3593,7 +3593,7 @@ namespace swig {
 }
 
 
-    #include "pylion.h"
+    #include "io_shaker.h"
 
 
 SWIGINTERNINLINE PyObject*

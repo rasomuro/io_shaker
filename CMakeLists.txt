@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.15)
 
-project(RSO LANGUAGES CXX)
+project(IOShaker LANGUAGES CXX)
 
-add_library(RSO STATIC
+add_library(IOShaker STATIC
     libRSO/IShaker.cpp
     libRSO/IShaker.h
     libRSO/RASH.cpp
@@ -16,21 +16,21 @@ add_library(RSO STATIC
     libRSO/function.h
     libRSO/shaker.cpp
     libRSO/shaker.h
-    lion.h
-    lion.cpp
+    c_io_shaker.h
+    c_io_shaker.cpp
 )
 
-add_library(RSO::RSO ALIAS RSO)
+add_library(IOShaker::IOShaker ALIAS IOShaker)
 
-target_compile_features(RSO PUBLIC cxx_std_11)
+target_compile_features(IOShaker PUBLIC cxx_std_11)
 
-target_include_directories(RSO
+target_include_directories(IOShaker
     PUBLIC
         $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/libRSO>
         $<INSTALL_INTERFACE:include>
 )
 
-set_target_properties(RSO PROPERTIES
+set_target_properties(IOShaker PROPERTIES
     CXX_EXTENSIONS OFF
     POSITION_INDEPENDENT_CODE ON
 )
