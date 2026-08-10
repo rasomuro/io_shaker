@@ -1,6 +1,6 @@
-# io_shaker
+# io-shaker
 
-`io_shaker` provides Python bindings for the C++ Reactive Search Optimization library.
+`io-shaker` provides Python bindings for the C++ Intelligent Optimization heuristics.
 The package exposes two local search heuristics for continuous function optimization:
 
 - the **inertial shaker** [1, 3]: a "search box" is maintained around the
@@ -27,10 +27,10 @@ LION association, Italy, 2026. Downloadable at https://intelligent-optimization.
 
 ### From PyPi
 
-Install the `io_shaker` package:
+Install the `io-shaker` package:
 
 ```sh
-python -m pip install io_shaker
+python -m pip install io-shaker
 ```
 
 The package contains binding to a C++ library; therefore,
