@@ -5,7 +5,7 @@
 
 #include "lion.h"
 
-double solver (
+static double solver (
     Function &function,
     double *best_x,
     int seed,
@@ -28,4 +28,34 @@ double solver (
         best_x[i] = solver.best_point[i];
     }
     return solver.best_value;
+}
+
+double reactive_affine_shaker (
+    Function &function,
+    double *best_x,
+    int seed,
+    double fraction,
+    double reducefactor,
+    double expandfactor,
+    int iterations_to_restart,
+    int constraint_enforcement,
+    bool allinone,
+    bool random_around_middle
+) {
+    return solver(function, best_x, seed, false, fraction, reducefactor, expandfactor, iterations_to_restart, constraint_enforcement, allinone, random_around_middle);
+}
+
+double inertial_shaker (
+    Function &function,
+    double *best_x,
+    int seed,
+    double fraction,
+    double reducefactor,
+    double expandfactor,
+    int iterations_to_restart,
+    int constraint_enforcement,
+    bool allinone,
+    bool random_around_middle
+) {
+    return solver(function, best_x, seed, true, fraction, reducefactor, expandfactor, iterations_to_restart, constraint_enforcement, allinone, random_around_middle);
 }

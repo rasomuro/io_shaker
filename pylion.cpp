@@ -6,10 +6,9 @@
 
 #include "pylion.h"
 
-double ras_solver (
+static PyObject *ras_solver (
     PyObject *function,
     int dimension,
-    PyObject *best_x,
     int seed,
     double fraction,
     PyObject *lb,
@@ -29,8 +28,47 @@ double ras_solver (
     for (int iteration = 0; iteration < 10000; iteration++) {
         solver.next(v);
     }
+    PyObject *best_x = PyList_New(dimension);
     for (int i = 0; i < dimension; i++) {
         PyList_SetItem(best_x, i, PyFloat_FromDouble(solver.best_point[i]));
     }
-    return solver.best_value;
+    PyObject *best = PyTuple_New(2);
+    PyTuple_SetItem(best, 0, PyFloat_FromDouble(solver.best_value));
+    PyTuple_SetItem(best, 1, best_x);
+    // Py_INCREF(best);
+    return best;
+}
+
+PyObject *reactive_affine_shaker (
+    PyObject *function,
+    int dimension,
+    int seed,
+    double fraction,
+    PyObject *lb,
+    PyObject *ub,
+    double reducefactor,
+    double expandfactor,
+    int iterations_to_restart,
+    int constraint_enforcement,
+    bool allinone,
+    bool random_around_middle
+) {
+    return ras_solver(function, dimension, seed, fraction, lb, ub, false, reducefactor, expandfactor, iterations_to_restart, constraint_enforcement, allinone, random_around_middle);
+}
+
+PyObject *inertial_shaker (
+    PyObject *function,
+    int dimension,
+    int seed,
+    double fraction,
+    PyObject *lb,
+    PyObject *ub,
+    double reducefactor,
+    double expandfactor,
+    int iterations_to_restart,
+    int constraint_enforcement,
+    bool allinone,
+    bool random_around_middle
+) {
+    return ras_solver(function, dimension, seed, fraction, lb, ub, true, reducefactor, expandfactor, iterations_to_restart, constraint_enforcement, allinone, random_around_middle);
 }

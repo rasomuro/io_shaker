@@ -26,8 +26,8 @@ pylion_extension = Extension(
 
 setup(
     name="pylion",
-    version="0.1.1",
-    description="Python bindings for the RSO optimization library",
+    version="0.1.2",
+    description="Python bindings for the Reactive Search Optimization library",
     long_description=(ROOT / "README.md").read_text(encoding="utf-8"),
     long_description_content_type="text/markdown",
     py_modules=["pylion"],

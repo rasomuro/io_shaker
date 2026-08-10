@@ -59,8 +59,11 @@ class _SwigNonDynamicMeta(type):
 
 
 
-def ras_solver(function, dimension, best_x, seed=0, fraction=.1, lb=None, ub=None, inertial=False, reducefactor=.9, expandfactor=-1.0, iterations_to_restart=-1, constraint_enforcement=0, allinone=False, random_around_middle=False):
-    return _pylion.ras_solver(function, dimension, best_x, seed, fraction, lb, ub, inertial, reducefactor, expandfactor, iterations_to_restart, constraint_enforcement, allinone, random_around_middle)
+def reactive_affine_shaker(function, dimension, seed=0, fraction=.1, lb=None, ub=None, reducefactor=.9, expandfactor=-1.0, iterations_to_restart=-1, constraint_enforcement=0, allinone=False, random_around_middle=False):
+    return _pylion.reactive_affine_shaker(function, dimension, seed, fraction, lb, ub, reducefactor, expandfactor, iterations_to_restart, constraint_enforcement, allinone, random_around_middle)
+
+def inertial_shaker(function, dimension, seed=0, fraction=.1, lb=None, ub=None, reducefactor=.9, expandfactor=-1.0, iterations_to_restart=-1, constraint_enforcement=0, allinone=False, random_around_middle=False):
+    return _pylion.inertial_shaker(function, dimension, seed, fraction, lb, ub, reducefactor, expandfactor, iterations_to_restart, constraint_enforcement, allinone, random_around_middle)
 
 cvar = _pylion.cvar
 ENFORCE_INDEPENDENT = cvar.ENFORCE_INDEPENDENT

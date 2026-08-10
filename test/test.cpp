@@ -42,9 +42,9 @@ int main() {
     double best[2];
     // Test the solvers ten times with different seeds
     for (int seed = 0; seed < 10; seed++ ) {
-        double best_value = solver(f, best, seed);
+        double best_value = reactive_affine_shaker(f, best, seed);
         cout << "BEST AFFINE " << best_value << " @ " << best[0] << ',' << best[1] << endl;
-        best_value = solver(f, best, seed, true);
+        best_value = inertial_shaker(f, best, seed);
         cout << "BEST INERTIAL " << best_value << " @ " << best[0] << ',' << best[1] << endl;
     }
     return 0;

@@ -10,15 +10,28 @@ extern "C" {
 
 #include "RASH_bounds.h"
 
-extern double ras_solver (
+extern PyObject *reactive_affine_shaker (
     PyObject *function,
     int dimension,
-    PyObject *best_x,
     int seed = 0,
     double fraction = .1,
     PyObject *lb = NULL,
     PyObject *ub = NULL,
-    bool inertial = false,
+    double reducefactor = .9,
+    double expandfactor = -1.0,
+    int iterations_to_restart = -1,
+    int constraint_enforcement = 0,
+    bool allinone = false,
+    bool random_around_middle = false
+);
+
+extern PyObject *inertial_shaker (
+    PyObject *function,
+    int dimension,
+    int seed = 0,
+    double fraction = .1,
+    PyObject *lb = NULL,
+    PyObject *ub = NULL,
     double reducefactor = .9,
     double expandfactor = -1.0,
     int iterations_to_restart = -1,

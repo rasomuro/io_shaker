@@ -3777,9 +3777,6 @@ SWIG_AsVal_bool (PyObject *obj, bool *val)
   return SWIG_OK;
 }
 
-
-  #define SWIG_From_double   PyFloat_FromDouble 
-
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -3839,752 +3836,652 @@ SWIGINTERN PyObject *Swig_var_REBOUND_INTERIOR_get(void) {
 }
 
 
-SWIGINTERN PyObject *_wrap_ras_solver__SWIG_0(PyObject *self, Py_ssize_t nobjs, PyObject **swig_obj) {
+SWIGINTERN PyObject *_wrap_reactive_affine_shaker__SWIG_0(PyObject *self, Py_ssize_t nobjs, PyObject **swig_obj) {
   PyObject *resultobj = 0;
   PyObject *arg1 = 0 ;
   int arg2 ;
-  PyObject *arg3 = 0 ;
-  int arg4 ;
-  double arg5 ;
+  int arg3 ;
+  double arg4 ;
+  PyObject *arg5 = 0 ;
   PyObject *arg6 = 0 ;
-  PyObject *arg7 = 0 ;
-  bool arg8 ;
-  double arg9 ;
-  double arg10 ;
-  int arg11 ;
-  int arg12 ;
-  bool arg13 ;
-  bool arg14 ;
+  double arg7 ;
+  double arg8 ;
+  int arg9 ;
+  int arg10 ;
+  bool arg11 ;
+  bool arg12 ;
   int val2 ;
   int ecode2 = 0 ;
-  int val4 ;
+  int val3 ;
+  int ecode3 = 0 ;
+  double val4 ;
   int ecode4 = 0 ;
-  double val5 ;
-  int ecode5 = 0 ;
-  bool val8 ;
+  double val7 ;
+  int ecode7 = 0 ;
+  double val8 ;
   int ecode8 = 0 ;
-  double val9 ;
+  int val9 ;
   int ecode9 = 0 ;
-  double val10 ;
+  int val10 ;
   int ecode10 = 0 ;
-  int val11 ;
+  bool val11 ;
   int ecode11 = 0 ;
-  int val12 ;
+  bool val12 ;
   int ecode12 = 0 ;
-  bool val13 ;
-  int ecode13 = 0 ;
-  bool val14 ;
-  int ecode14 = 0 ;
-  double result;
-  
-  (void)self;
-  if ((nobjs < 14) || (nobjs > 14)) SWIG_fail;
-  arg1 = swig_obj[0];
-  ecode2 = SWIG_AsVal_int(swig_obj[1], &val2);
-  if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "ras_solver" "', argument " "2"" of type '" "int""'");
-  } 
-  arg2 = static_cast< int >(val2);
-  arg3 = swig_obj[2];
-  ecode4 = SWIG_AsVal_int(swig_obj[3], &val4);
-  if (!SWIG_IsOK(ecode4)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "ras_solver" "', argument " "4"" of type '" "int""'");
-  } 
-  arg4 = static_cast< int >(val4);
-  ecode5 = SWIG_AsVal_double(swig_obj[4], &val5);
-  if (!SWIG_IsOK(ecode5)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode5), "in method '" "ras_solver" "', argument " "5"" of type '" "double""'");
-  } 
-  arg5 = static_cast< double >(val5);
-  arg6 = swig_obj[5];
-  arg7 = swig_obj[6];
-  ecode8 = SWIG_AsVal_bool(swig_obj[7], &val8);
-  if (!SWIG_IsOK(ecode8)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode8), "in method '" "ras_solver" "', argument " "8"" of type '" "bool""'");
-  } 
-  arg8 = static_cast< bool >(val8);
-  ecode9 = SWIG_AsVal_double(swig_obj[8], &val9);
-  if (!SWIG_IsOK(ecode9)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode9), "in method '" "ras_solver" "', argument " "9"" of type '" "double""'");
-  } 
-  arg9 = static_cast< double >(val9);
-  ecode10 = SWIG_AsVal_double(swig_obj[9], &val10);
-  if (!SWIG_IsOK(ecode10)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode10), "in method '" "ras_solver" "', argument " "10"" of type '" "double""'");
-  } 
-  arg10 = static_cast< double >(val10);
-  ecode11 = SWIG_AsVal_int(swig_obj[10], &val11);
-  if (!SWIG_IsOK(ecode11)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode11), "in method '" "ras_solver" "', argument " "11"" of type '" "int""'");
-  } 
-  arg11 = static_cast< int >(val11);
-  ecode12 = SWIG_AsVal_int(swig_obj[11], &val12);
-  if (!SWIG_IsOK(ecode12)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode12), "in method '" "ras_solver" "', argument " "12"" of type '" "int""'");
-  } 
-  arg12 = static_cast< int >(val12);
-  ecode13 = SWIG_AsVal_bool(swig_obj[12], &val13);
-  if (!SWIG_IsOK(ecode13)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode13), "in method '" "ras_solver" "', argument " "13"" of type '" "bool""'");
-  } 
-  arg13 = static_cast< bool >(val13);
-  ecode14 = SWIG_AsVal_bool(swig_obj[13], &val14);
-  if (!SWIG_IsOK(ecode14)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode14), "in method '" "ras_solver" "', argument " "14"" of type '" "bool""'");
-  } 
-  arg14 = static_cast< bool >(val14);
-  result = (double)ras_solver(arg1,arg2,arg3,arg4,arg5,arg6,arg7,arg8,arg9,arg10,arg11,arg12,arg13,arg14);
-  resultobj = SWIG_From_double(static_cast< double >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ras_solver__SWIG_1(PyObject *self, Py_ssize_t nobjs, PyObject **swig_obj) {
-  PyObject *resultobj = 0;
-  PyObject *arg1 = 0 ;
-  int arg2 ;
-  PyObject *arg3 = 0 ;
-  int arg4 ;
-  double arg5 ;
-  PyObject *arg6 = 0 ;
-  PyObject *arg7 = 0 ;
-  bool arg8 ;
-  double arg9 ;
-  double arg10 ;
-  int arg11 ;
-  int arg12 ;
-  bool arg13 ;
-  int val2 ;
-  int ecode2 = 0 ;
-  int val4 ;
-  int ecode4 = 0 ;
-  double val5 ;
-  int ecode5 = 0 ;
-  bool val8 ;
-  int ecode8 = 0 ;
-  double val9 ;
-  int ecode9 = 0 ;
-  double val10 ;
-  int ecode10 = 0 ;
-  int val11 ;
-  int ecode11 = 0 ;
-  int val12 ;
-  int ecode12 = 0 ;
-  bool val13 ;
-  int ecode13 = 0 ;
-  double result;
-  
-  (void)self;
-  if ((nobjs < 13) || (nobjs > 13)) SWIG_fail;
-  arg1 = swig_obj[0];
-  ecode2 = SWIG_AsVal_int(swig_obj[1], &val2);
-  if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "ras_solver" "', argument " "2"" of type '" "int""'");
-  } 
-  arg2 = static_cast< int >(val2);
-  arg3 = swig_obj[2];
-  ecode4 = SWIG_AsVal_int(swig_obj[3], &val4);
-  if (!SWIG_IsOK(ecode4)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "ras_solver" "', argument " "4"" of type '" "int""'");
-  } 
-  arg4 = static_cast< int >(val4);
-  ecode5 = SWIG_AsVal_double(swig_obj[4], &val5);
-  if (!SWIG_IsOK(ecode5)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode5), "in method '" "ras_solver" "', argument " "5"" of type '" "double""'");
-  } 
-  arg5 = static_cast< double >(val5);
-  arg6 = swig_obj[5];
-  arg7 = swig_obj[6];
-  ecode8 = SWIG_AsVal_bool(swig_obj[7], &val8);
-  if (!SWIG_IsOK(ecode8)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode8), "in method '" "ras_solver" "', argument " "8"" of type '" "bool""'");
-  } 
-  arg8 = static_cast< bool >(val8);
-  ecode9 = SWIG_AsVal_double(swig_obj[8], &val9);
-  if (!SWIG_IsOK(ecode9)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode9), "in method '" "ras_solver" "', argument " "9"" of type '" "double""'");
-  } 
-  arg9 = static_cast< double >(val9);
-  ecode10 = SWIG_AsVal_double(swig_obj[9], &val10);
-  if (!SWIG_IsOK(ecode10)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode10), "in method '" "ras_solver" "', argument " "10"" of type '" "double""'");
-  } 
-  arg10 = static_cast< double >(val10);
-  ecode11 = SWIG_AsVal_int(swig_obj[10], &val11);
-  if (!SWIG_IsOK(ecode11)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode11), "in method '" "ras_solver" "', argument " "11"" of type '" "int""'");
-  } 
-  arg11 = static_cast< int >(val11);
-  ecode12 = SWIG_AsVal_int(swig_obj[11], &val12);
-  if (!SWIG_IsOK(ecode12)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode12), "in method '" "ras_solver" "', argument " "12"" of type '" "int""'");
-  } 
-  arg12 = static_cast< int >(val12);
-  ecode13 = SWIG_AsVal_bool(swig_obj[12], &val13);
-  if (!SWIG_IsOK(ecode13)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode13), "in method '" "ras_solver" "', argument " "13"" of type '" "bool""'");
-  } 
-  arg13 = static_cast< bool >(val13);
-  result = (double)ras_solver(arg1,arg2,arg3,arg4,arg5,arg6,arg7,arg8,arg9,arg10,arg11,arg12,arg13);
-  resultobj = SWIG_From_double(static_cast< double >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ras_solver__SWIG_2(PyObject *self, Py_ssize_t nobjs, PyObject **swig_obj) {
-  PyObject *resultobj = 0;
-  PyObject *arg1 = 0 ;
-  int arg2 ;
-  PyObject *arg3 = 0 ;
-  int arg4 ;
-  double arg5 ;
-  PyObject *arg6 = 0 ;
-  PyObject *arg7 = 0 ;
-  bool arg8 ;
-  double arg9 ;
-  double arg10 ;
-  int arg11 ;
-  int arg12 ;
-  int val2 ;
-  int ecode2 = 0 ;
-  int val4 ;
-  int ecode4 = 0 ;
-  double val5 ;
-  int ecode5 = 0 ;
-  bool val8 ;
-  int ecode8 = 0 ;
-  double val9 ;
-  int ecode9 = 0 ;
-  double val10 ;
-  int ecode10 = 0 ;
-  int val11 ;
-  int ecode11 = 0 ;
-  int val12 ;
-  int ecode12 = 0 ;
-  double result;
+  PyObject *result = 0 ;
   
   (void)self;
   if ((nobjs < 12) || (nobjs > 12)) SWIG_fail;
   arg1 = swig_obj[0];
   ecode2 = SWIG_AsVal_int(swig_obj[1], &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "ras_solver" "', argument " "2"" of type '" "int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "reactive_affine_shaker" "', argument " "2"" of type '" "int""'");
   } 
   arg2 = static_cast< int >(val2);
-  arg3 = swig_obj[2];
-  ecode4 = SWIG_AsVal_int(swig_obj[3], &val4);
+  ecode3 = SWIG_AsVal_int(swig_obj[2], &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "reactive_affine_shaker" "', argument " "3"" of type '" "int""'");
+  } 
+  arg3 = static_cast< int >(val3);
+  ecode4 = SWIG_AsVal_double(swig_obj[3], &val4);
   if (!SWIG_IsOK(ecode4)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "ras_solver" "', argument " "4"" of type '" "int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "reactive_affine_shaker" "', argument " "4"" of type '" "double""'");
   } 
-  arg4 = static_cast< int >(val4);
-  ecode5 = SWIG_AsVal_double(swig_obj[4], &val5);
-  if (!SWIG_IsOK(ecode5)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode5), "in method '" "ras_solver" "', argument " "5"" of type '" "double""'");
-  } 
-  arg5 = static_cast< double >(val5);
+  arg4 = static_cast< double >(val4);
+  arg5 = swig_obj[4];
   arg6 = swig_obj[5];
-  arg7 = swig_obj[6];
-  ecode8 = SWIG_AsVal_bool(swig_obj[7], &val8);
+  ecode7 = SWIG_AsVal_double(swig_obj[6], &val7);
+  if (!SWIG_IsOK(ecode7)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode7), "in method '" "reactive_affine_shaker" "', argument " "7"" of type '" "double""'");
+  } 
+  arg7 = static_cast< double >(val7);
+  ecode8 = SWIG_AsVal_double(swig_obj[7], &val8);
   if (!SWIG_IsOK(ecode8)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode8), "in method '" "ras_solver" "', argument " "8"" of type '" "bool""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode8), "in method '" "reactive_affine_shaker" "', argument " "8"" of type '" "double""'");
   } 
-  arg8 = static_cast< bool >(val8);
-  ecode9 = SWIG_AsVal_double(swig_obj[8], &val9);
+  arg8 = static_cast< double >(val8);
+  ecode9 = SWIG_AsVal_int(swig_obj[8], &val9);
   if (!SWIG_IsOK(ecode9)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode9), "in method '" "ras_solver" "', argument " "9"" of type '" "double""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode9), "in method '" "reactive_affine_shaker" "', argument " "9"" of type '" "int""'");
   } 
-  arg9 = static_cast< double >(val9);
-  ecode10 = SWIG_AsVal_double(swig_obj[9], &val10);
+  arg9 = static_cast< int >(val9);
+  ecode10 = SWIG_AsVal_int(swig_obj[9], &val10);
   if (!SWIG_IsOK(ecode10)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode10), "in method '" "ras_solver" "', argument " "10"" of type '" "double""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode10), "in method '" "reactive_affine_shaker" "', argument " "10"" of type '" "int""'");
   } 
-  arg10 = static_cast< double >(val10);
-  ecode11 = SWIG_AsVal_int(swig_obj[10], &val11);
+  arg10 = static_cast< int >(val10);
+  ecode11 = SWIG_AsVal_bool(swig_obj[10], &val11);
   if (!SWIG_IsOK(ecode11)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode11), "in method '" "ras_solver" "', argument " "11"" of type '" "int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode11), "in method '" "reactive_affine_shaker" "', argument " "11"" of type '" "bool""'");
   } 
-  arg11 = static_cast< int >(val11);
-  ecode12 = SWIG_AsVal_int(swig_obj[11], &val12);
+  arg11 = static_cast< bool >(val11);
+  ecode12 = SWIG_AsVal_bool(swig_obj[11], &val12);
   if (!SWIG_IsOK(ecode12)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode12), "in method '" "ras_solver" "', argument " "12"" of type '" "int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode12), "in method '" "reactive_affine_shaker" "', argument " "12"" of type '" "bool""'");
   } 
-  arg12 = static_cast< int >(val12);
-  result = (double)ras_solver(arg1,arg2,arg3,arg4,arg5,arg6,arg7,arg8,arg9,arg10,arg11,arg12);
-  resultobj = SWIG_From_double(static_cast< double >(result));
+  arg12 = static_cast< bool >(val12);
+  result = (PyObject *)reactive_affine_shaker(arg1,arg2,arg3,arg4,arg5,arg6,arg7,arg8,arg9,arg10,arg11,arg12);
+  resultobj = result;
+  if (!resultobj) SWIG_fail;
   return resultobj;
 fail:
   return NULL;
 }
 
 
-SWIGINTERN PyObject *_wrap_ras_solver__SWIG_3(PyObject *self, Py_ssize_t nobjs, PyObject **swig_obj) {
+SWIGINTERN PyObject *_wrap_reactive_affine_shaker__SWIG_1(PyObject *self, Py_ssize_t nobjs, PyObject **swig_obj) {
   PyObject *resultobj = 0;
   PyObject *arg1 = 0 ;
   int arg2 ;
-  PyObject *arg3 = 0 ;
-  int arg4 ;
-  double arg5 ;
+  int arg3 ;
+  double arg4 ;
+  PyObject *arg5 = 0 ;
   PyObject *arg6 = 0 ;
-  PyObject *arg7 = 0 ;
-  bool arg8 ;
-  double arg9 ;
-  double arg10 ;
-  int arg11 ;
+  double arg7 ;
+  double arg8 ;
+  int arg9 ;
+  int arg10 ;
+  bool arg11 ;
   int val2 ;
   int ecode2 = 0 ;
-  int val4 ;
+  int val3 ;
+  int ecode3 = 0 ;
+  double val4 ;
   int ecode4 = 0 ;
-  double val5 ;
-  int ecode5 = 0 ;
-  bool val8 ;
+  double val7 ;
+  int ecode7 = 0 ;
+  double val8 ;
   int ecode8 = 0 ;
-  double val9 ;
+  int val9 ;
   int ecode9 = 0 ;
-  double val10 ;
+  int val10 ;
   int ecode10 = 0 ;
-  int val11 ;
+  bool val11 ;
   int ecode11 = 0 ;
-  double result;
+  PyObject *result = 0 ;
   
   (void)self;
   if ((nobjs < 11) || (nobjs > 11)) SWIG_fail;
   arg1 = swig_obj[0];
   ecode2 = SWIG_AsVal_int(swig_obj[1], &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "ras_solver" "', argument " "2"" of type '" "int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "reactive_affine_shaker" "', argument " "2"" of type '" "int""'");
   } 
   arg2 = static_cast< int >(val2);
-  arg3 = swig_obj[2];
-  ecode4 = SWIG_AsVal_int(swig_obj[3], &val4);
+  ecode3 = SWIG_AsVal_int(swig_obj[2], &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "reactive_affine_shaker" "', argument " "3"" of type '" "int""'");
+  } 
+  arg3 = static_cast< int >(val3);
+  ecode4 = SWIG_AsVal_double(swig_obj[3], &val4);
   if (!SWIG_IsOK(ecode4)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "ras_solver" "', argument " "4"" of type '" "int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "reactive_affine_shaker" "', argument " "4"" of type '" "double""'");
   } 
-  arg4 = static_cast< int >(val4);
-  ecode5 = SWIG_AsVal_double(swig_obj[4], &val5);
-  if (!SWIG_IsOK(ecode5)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode5), "in method '" "ras_solver" "', argument " "5"" of type '" "double""'");
-  } 
-  arg5 = static_cast< double >(val5);
+  arg4 = static_cast< double >(val4);
+  arg5 = swig_obj[4];
   arg6 = swig_obj[5];
-  arg7 = swig_obj[6];
-  ecode8 = SWIG_AsVal_bool(swig_obj[7], &val8);
+  ecode7 = SWIG_AsVal_double(swig_obj[6], &val7);
+  if (!SWIG_IsOK(ecode7)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode7), "in method '" "reactive_affine_shaker" "', argument " "7"" of type '" "double""'");
+  } 
+  arg7 = static_cast< double >(val7);
+  ecode8 = SWIG_AsVal_double(swig_obj[7], &val8);
   if (!SWIG_IsOK(ecode8)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode8), "in method '" "ras_solver" "', argument " "8"" of type '" "bool""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode8), "in method '" "reactive_affine_shaker" "', argument " "8"" of type '" "double""'");
   } 
-  arg8 = static_cast< bool >(val8);
-  ecode9 = SWIG_AsVal_double(swig_obj[8], &val9);
+  arg8 = static_cast< double >(val8);
+  ecode9 = SWIG_AsVal_int(swig_obj[8], &val9);
   if (!SWIG_IsOK(ecode9)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode9), "in method '" "ras_solver" "', argument " "9"" of type '" "double""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode9), "in method '" "reactive_affine_shaker" "', argument " "9"" of type '" "int""'");
   } 
-  arg9 = static_cast< double >(val9);
-  ecode10 = SWIG_AsVal_double(swig_obj[9], &val10);
+  arg9 = static_cast< int >(val9);
+  ecode10 = SWIG_AsVal_int(swig_obj[9], &val10);
   if (!SWIG_IsOK(ecode10)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode10), "in method '" "ras_solver" "', argument " "10"" of type '" "double""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode10), "in method '" "reactive_affine_shaker" "', argument " "10"" of type '" "int""'");
   } 
-  arg10 = static_cast< double >(val10);
-  ecode11 = SWIG_AsVal_int(swig_obj[10], &val11);
+  arg10 = static_cast< int >(val10);
+  ecode11 = SWIG_AsVal_bool(swig_obj[10], &val11);
   if (!SWIG_IsOK(ecode11)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode11), "in method '" "ras_solver" "', argument " "11"" of type '" "int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode11), "in method '" "reactive_affine_shaker" "', argument " "11"" of type '" "bool""'");
   } 
-  arg11 = static_cast< int >(val11);
-  result = (double)ras_solver(arg1,arg2,arg3,arg4,arg5,arg6,arg7,arg8,arg9,arg10,arg11);
-  resultobj = SWIG_From_double(static_cast< double >(result));
+  arg11 = static_cast< bool >(val11);
+  result = (PyObject *)reactive_affine_shaker(arg1,arg2,arg3,arg4,arg5,arg6,arg7,arg8,arg9,arg10,arg11);
+  resultobj = result;
+  if (!resultobj) SWIG_fail;
   return resultobj;
 fail:
   return NULL;
 }
 
 
-SWIGINTERN PyObject *_wrap_ras_solver__SWIG_4(PyObject *self, Py_ssize_t nobjs, PyObject **swig_obj) {
+SWIGINTERN PyObject *_wrap_reactive_affine_shaker__SWIG_2(PyObject *self, Py_ssize_t nobjs, PyObject **swig_obj) {
   PyObject *resultobj = 0;
   PyObject *arg1 = 0 ;
   int arg2 ;
-  PyObject *arg3 = 0 ;
-  int arg4 ;
-  double arg5 ;
+  int arg3 ;
+  double arg4 ;
+  PyObject *arg5 = 0 ;
   PyObject *arg6 = 0 ;
-  PyObject *arg7 = 0 ;
-  bool arg8 ;
-  double arg9 ;
-  double arg10 ;
+  double arg7 ;
+  double arg8 ;
+  int arg9 ;
+  int arg10 ;
   int val2 ;
   int ecode2 = 0 ;
-  int val4 ;
+  int val3 ;
+  int ecode3 = 0 ;
+  double val4 ;
   int ecode4 = 0 ;
-  double val5 ;
-  int ecode5 = 0 ;
-  bool val8 ;
+  double val7 ;
+  int ecode7 = 0 ;
+  double val8 ;
   int ecode8 = 0 ;
-  double val9 ;
+  int val9 ;
   int ecode9 = 0 ;
-  double val10 ;
+  int val10 ;
   int ecode10 = 0 ;
-  double result;
+  PyObject *result = 0 ;
   
   (void)self;
   if ((nobjs < 10) || (nobjs > 10)) SWIG_fail;
   arg1 = swig_obj[0];
   ecode2 = SWIG_AsVal_int(swig_obj[1], &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "ras_solver" "', argument " "2"" of type '" "int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "reactive_affine_shaker" "', argument " "2"" of type '" "int""'");
   } 
   arg2 = static_cast< int >(val2);
-  arg3 = swig_obj[2];
-  ecode4 = SWIG_AsVal_int(swig_obj[3], &val4);
+  ecode3 = SWIG_AsVal_int(swig_obj[2], &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "reactive_affine_shaker" "', argument " "3"" of type '" "int""'");
+  } 
+  arg3 = static_cast< int >(val3);
+  ecode4 = SWIG_AsVal_double(swig_obj[3], &val4);
   if (!SWIG_IsOK(ecode4)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "ras_solver" "', argument " "4"" of type '" "int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "reactive_affine_shaker" "', argument " "4"" of type '" "double""'");
   } 
-  arg4 = static_cast< int >(val4);
-  ecode5 = SWIG_AsVal_double(swig_obj[4], &val5);
-  if (!SWIG_IsOK(ecode5)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode5), "in method '" "ras_solver" "', argument " "5"" of type '" "double""'");
-  } 
-  arg5 = static_cast< double >(val5);
+  arg4 = static_cast< double >(val4);
+  arg5 = swig_obj[4];
   arg6 = swig_obj[5];
-  arg7 = swig_obj[6];
-  ecode8 = SWIG_AsVal_bool(swig_obj[7], &val8);
+  ecode7 = SWIG_AsVal_double(swig_obj[6], &val7);
+  if (!SWIG_IsOK(ecode7)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode7), "in method '" "reactive_affine_shaker" "', argument " "7"" of type '" "double""'");
+  } 
+  arg7 = static_cast< double >(val7);
+  ecode8 = SWIG_AsVal_double(swig_obj[7], &val8);
   if (!SWIG_IsOK(ecode8)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode8), "in method '" "ras_solver" "', argument " "8"" of type '" "bool""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode8), "in method '" "reactive_affine_shaker" "', argument " "8"" of type '" "double""'");
   } 
-  arg8 = static_cast< bool >(val8);
-  ecode9 = SWIG_AsVal_double(swig_obj[8], &val9);
+  arg8 = static_cast< double >(val8);
+  ecode9 = SWIG_AsVal_int(swig_obj[8], &val9);
   if (!SWIG_IsOK(ecode9)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode9), "in method '" "ras_solver" "', argument " "9"" of type '" "double""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode9), "in method '" "reactive_affine_shaker" "', argument " "9"" of type '" "int""'");
   } 
-  arg9 = static_cast< double >(val9);
-  ecode10 = SWIG_AsVal_double(swig_obj[9], &val10);
+  arg9 = static_cast< int >(val9);
+  ecode10 = SWIG_AsVal_int(swig_obj[9], &val10);
   if (!SWIG_IsOK(ecode10)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode10), "in method '" "ras_solver" "', argument " "10"" of type '" "double""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode10), "in method '" "reactive_affine_shaker" "', argument " "10"" of type '" "int""'");
   } 
-  arg10 = static_cast< double >(val10);
-  result = (double)ras_solver(arg1,arg2,arg3,arg4,arg5,arg6,arg7,arg8,arg9,arg10);
-  resultobj = SWIG_From_double(static_cast< double >(result));
+  arg10 = static_cast< int >(val10);
+  result = (PyObject *)reactive_affine_shaker(arg1,arg2,arg3,arg4,arg5,arg6,arg7,arg8,arg9,arg10);
+  resultobj = result;
+  if (!resultobj) SWIG_fail;
   return resultobj;
 fail:
   return NULL;
 }
 
 
-SWIGINTERN PyObject *_wrap_ras_solver__SWIG_5(PyObject *self, Py_ssize_t nobjs, PyObject **swig_obj) {
+SWIGINTERN PyObject *_wrap_reactive_affine_shaker__SWIG_3(PyObject *self, Py_ssize_t nobjs, PyObject **swig_obj) {
   PyObject *resultobj = 0;
   PyObject *arg1 = 0 ;
   int arg2 ;
-  PyObject *arg3 = 0 ;
-  int arg4 ;
-  double arg5 ;
+  int arg3 ;
+  double arg4 ;
+  PyObject *arg5 = 0 ;
   PyObject *arg6 = 0 ;
-  PyObject *arg7 = 0 ;
-  bool arg8 ;
-  double arg9 ;
+  double arg7 ;
+  double arg8 ;
+  int arg9 ;
   int val2 ;
   int ecode2 = 0 ;
-  int val4 ;
+  int val3 ;
+  int ecode3 = 0 ;
+  double val4 ;
   int ecode4 = 0 ;
-  double val5 ;
-  int ecode5 = 0 ;
-  bool val8 ;
+  double val7 ;
+  int ecode7 = 0 ;
+  double val8 ;
   int ecode8 = 0 ;
-  double val9 ;
+  int val9 ;
   int ecode9 = 0 ;
-  double result;
+  PyObject *result = 0 ;
   
   (void)self;
   if ((nobjs < 9) || (nobjs > 9)) SWIG_fail;
   arg1 = swig_obj[0];
   ecode2 = SWIG_AsVal_int(swig_obj[1], &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "ras_solver" "', argument " "2"" of type '" "int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "reactive_affine_shaker" "', argument " "2"" of type '" "int""'");
   } 
   arg2 = static_cast< int >(val2);
-  arg3 = swig_obj[2];
-  ecode4 = SWIG_AsVal_int(swig_obj[3], &val4);
+  ecode3 = SWIG_AsVal_int(swig_obj[2], &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "reactive_affine_shaker" "', argument " "3"" of type '" "int""'");
+  } 
+  arg3 = static_cast< int >(val3);
+  ecode4 = SWIG_AsVal_double(swig_obj[3], &val4);
   if (!SWIG_IsOK(ecode4)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "ras_solver" "', argument " "4"" of type '" "int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "reactive_affine_shaker" "', argument " "4"" of type '" "double""'");
   } 
-  arg4 = static_cast< int >(val4);
-  ecode5 = SWIG_AsVal_double(swig_obj[4], &val5);
-  if (!SWIG_IsOK(ecode5)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode5), "in method '" "ras_solver" "', argument " "5"" of type '" "double""'");
-  } 
-  arg5 = static_cast< double >(val5);
+  arg4 = static_cast< double >(val4);
+  arg5 = swig_obj[4];
   arg6 = swig_obj[5];
-  arg7 = swig_obj[6];
-  ecode8 = SWIG_AsVal_bool(swig_obj[7], &val8);
+  ecode7 = SWIG_AsVal_double(swig_obj[6], &val7);
+  if (!SWIG_IsOK(ecode7)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode7), "in method '" "reactive_affine_shaker" "', argument " "7"" of type '" "double""'");
+  } 
+  arg7 = static_cast< double >(val7);
+  ecode8 = SWIG_AsVal_double(swig_obj[7], &val8);
   if (!SWIG_IsOK(ecode8)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode8), "in method '" "ras_solver" "', argument " "8"" of type '" "bool""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode8), "in method '" "reactive_affine_shaker" "', argument " "8"" of type '" "double""'");
   } 
-  arg8 = static_cast< bool >(val8);
-  ecode9 = SWIG_AsVal_double(swig_obj[8], &val9);
+  arg8 = static_cast< double >(val8);
+  ecode9 = SWIG_AsVal_int(swig_obj[8], &val9);
   if (!SWIG_IsOK(ecode9)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode9), "in method '" "ras_solver" "', argument " "9"" of type '" "double""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode9), "in method '" "reactive_affine_shaker" "', argument " "9"" of type '" "int""'");
   } 
-  arg9 = static_cast< double >(val9);
-  result = (double)ras_solver(arg1,arg2,arg3,arg4,arg5,arg6,arg7,arg8,arg9);
-  resultobj = SWIG_From_double(static_cast< double >(result));
+  arg9 = static_cast< int >(val9);
+  result = (PyObject *)reactive_affine_shaker(arg1,arg2,arg3,arg4,arg5,arg6,arg7,arg8,arg9);
+  resultobj = result;
+  if (!resultobj) SWIG_fail;
   return resultobj;
 fail:
   return NULL;
 }
 
 
-SWIGINTERN PyObject *_wrap_ras_solver__SWIG_6(PyObject *self, Py_ssize_t nobjs, PyObject **swig_obj) {
+SWIGINTERN PyObject *_wrap_reactive_affine_shaker__SWIG_4(PyObject *self, Py_ssize_t nobjs, PyObject **swig_obj) {
   PyObject *resultobj = 0;
   PyObject *arg1 = 0 ;
   int arg2 ;
-  PyObject *arg3 = 0 ;
-  int arg4 ;
-  double arg5 ;
+  int arg3 ;
+  double arg4 ;
+  PyObject *arg5 = 0 ;
   PyObject *arg6 = 0 ;
-  PyObject *arg7 = 0 ;
-  bool arg8 ;
+  double arg7 ;
+  double arg8 ;
   int val2 ;
   int ecode2 = 0 ;
-  int val4 ;
+  int val3 ;
+  int ecode3 = 0 ;
+  double val4 ;
   int ecode4 = 0 ;
-  double val5 ;
-  int ecode5 = 0 ;
-  bool val8 ;
+  double val7 ;
+  int ecode7 = 0 ;
+  double val8 ;
   int ecode8 = 0 ;
-  double result;
+  PyObject *result = 0 ;
   
   (void)self;
   if ((nobjs < 8) || (nobjs > 8)) SWIG_fail;
   arg1 = swig_obj[0];
   ecode2 = SWIG_AsVal_int(swig_obj[1], &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "ras_solver" "', argument " "2"" of type '" "int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "reactive_affine_shaker" "', argument " "2"" of type '" "int""'");
   } 
   arg2 = static_cast< int >(val2);
-  arg3 = swig_obj[2];
-  ecode4 = SWIG_AsVal_int(swig_obj[3], &val4);
+  ecode3 = SWIG_AsVal_int(swig_obj[2], &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "reactive_affine_shaker" "', argument " "3"" of type '" "int""'");
+  } 
+  arg3 = static_cast< int >(val3);
+  ecode4 = SWIG_AsVal_double(swig_obj[3], &val4);
   if (!SWIG_IsOK(ecode4)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "ras_solver" "', argument " "4"" of type '" "int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "reactive_affine_shaker" "', argument " "4"" of type '" "double""'");
   } 
-  arg4 = static_cast< int >(val4);
-  ecode5 = SWIG_AsVal_double(swig_obj[4], &val5);
-  if (!SWIG_IsOK(ecode5)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode5), "in method '" "ras_solver" "', argument " "5"" of type '" "double""'");
-  } 
-  arg5 = static_cast< double >(val5);
+  arg4 = static_cast< double >(val4);
+  arg5 = swig_obj[4];
   arg6 = swig_obj[5];
-  arg7 = swig_obj[6];
-  ecode8 = SWIG_AsVal_bool(swig_obj[7], &val8);
-  if (!SWIG_IsOK(ecode8)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode8), "in method '" "ras_solver" "', argument " "8"" of type '" "bool""'");
+  ecode7 = SWIG_AsVal_double(swig_obj[6], &val7);
+  if (!SWIG_IsOK(ecode7)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode7), "in method '" "reactive_affine_shaker" "', argument " "7"" of type '" "double""'");
   } 
-  arg8 = static_cast< bool >(val8);
-  result = (double)ras_solver(arg1,arg2,arg3,arg4,arg5,arg6,arg7,arg8);
-  resultobj = SWIG_From_double(static_cast< double >(result));
+  arg7 = static_cast< double >(val7);
+  ecode8 = SWIG_AsVal_double(swig_obj[7], &val8);
+  if (!SWIG_IsOK(ecode8)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode8), "in method '" "reactive_affine_shaker" "', argument " "8"" of type '" "double""'");
+  } 
+  arg8 = static_cast< double >(val8);
+  result = (PyObject *)reactive_affine_shaker(arg1,arg2,arg3,arg4,arg5,arg6,arg7,arg8);
+  resultobj = result;
+  if (!resultobj) SWIG_fail;
   return resultobj;
 fail:
   return NULL;
 }
 
 
-SWIGINTERN PyObject *_wrap_ras_solver__SWIG_7(PyObject *self, Py_ssize_t nobjs, PyObject **swig_obj) {
+SWIGINTERN PyObject *_wrap_reactive_affine_shaker__SWIG_5(PyObject *self, Py_ssize_t nobjs, PyObject **swig_obj) {
   PyObject *resultobj = 0;
   PyObject *arg1 = 0 ;
   int arg2 ;
-  PyObject *arg3 = 0 ;
-  int arg4 ;
-  double arg5 ;
+  int arg3 ;
+  double arg4 ;
+  PyObject *arg5 = 0 ;
   PyObject *arg6 = 0 ;
-  PyObject *arg7 = 0 ;
+  double arg7 ;
   int val2 ;
   int ecode2 = 0 ;
-  int val4 ;
+  int val3 ;
+  int ecode3 = 0 ;
+  double val4 ;
   int ecode4 = 0 ;
-  double val5 ;
-  int ecode5 = 0 ;
-  double result;
+  double val7 ;
+  int ecode7 = 0 ;
+  PyObject *result = 0 ;
   
   (void)self;
   if ((nobjs < 7) || (nobjs > 7)) SWIG_fail;
   arg1 = swig_obj[0];
   ecode2 = SWIG_AsVal_int(swig_obj[1], &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "ras_solver" "', argument " "2"" of type '" "int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "reactive_affine_shaker" "', argument " "2"" of type '" "int""'");
   } 
   arg2 = static_cast< int >(val2);
-  arg3 = swig_obj[2];
-  ecode4 = SWIG_AsVal_int(swig_obj[3], &val4);
+  ecode3 = SWIG_AsVal_int(swig_obj[2], &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "reactive_affine_shaker" "', argument " "3"" of type '" "int""'");
+  } 
+  arg3 = static_cast< int >(val3);
+  ecode4 = SWIG_AsVal_double(swig_obj[3], &val4);
   if (!SWIG_IsOK(ecode4)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "ras_solver" "', argument " "4"" of type '" "int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "reactive_affine_shaker" "', argument " "4"" of type '" "double""'");
   } 
-  arg4 = static_cast< int >(val4);
-  ecode5 = SWIG_AsVal_double(swig_obj[4], &val5);
-  if (!SWIG_IsOK(ecode5)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode5), "in method '" "ras_solver" "', argument " "5"" of type '" "double""'");
-  } 
-  arg5 = static_cast< double >(val5);
+  arg4 = static_cast< double >(val4);
+  arg5 = swig_obj[4];
   arg6 = swig_obj[5];
-  arg7 = swig_obj[6];
-  result = (double)ras_solver(arg1,arg2,arg3,arg4,arg5,arg6,arg7);
-  resultobj = SWIG_From_double(static_cast< double >(result));
+  ecode7 = SWIG_AsVal_double(swig_obj[6], &val7);
+  if (!SWIG_IsOK(ecode7)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode7), "in method '" "reactive_affine_shaker" "', argument " "7"" of type '" "double""'");
+  } 
+  arg7 = static_cast< double >(val7);
+  result = (PyObject *)reactive_affine_shaker(arg1,arg2,arg3,arg4,arg5,arg6,arg7);
+  resultobj = result;
+  if (!resultobj) SWIG_fail;
   return resultobj;
 fail:
   return NULL;
 }
 
 
-SWIGINTERN PyObject *_wrap_ras_solver__SWIG_8(PyObject *self, Py_ssize_t nobjs, PyObject **swig_obj) {
+SWIGINTERN PyObject *_wrap_reactive_affine_shaker__SWIG_6(PyObject *self, Py_ssize_t nobjs, PyObject **swig_obj) {
   PyObject *resultobj = 0;
   PyObject *arg1 = 0 ;
   int arg2 ;
-  PyObject *arg3 = 0 ;
-  int arg4 ;
-  double arg5 ;
+  int arg3 ;
+  double arg4 ;
+  PyObject *arg5 = 0 ;
   PyObject *arg6 = 0 ;
   int val2 ;
   int ecode2 = 0 ;
-  int val4 ;
+  int val3 ;
+  int ecode3 = 0 ;
+  double val4 ;
   int ecode4 = 0 ;
-  double val5 ;
-  int ecode5 = 0 ;
-  double result;
+  PyObject *result = 0 ;
   
   (void)self;
   if ((nobjs < 6) || (nobjs > 6)) SWIG_fail;
   arg1 = swig_obj[0];
   ecode2 = SWIG_AsVal_int(swig_obj[1], &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "ras_solver" "', argument " "2"" of type '" "int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "reactive_affine_shaker" "', argument " "2"" of type '" "int""'");
   } 
   arg2 = static_cast< int >(val2);
-  arg3 = swig_obj[2];
-  ecode4 = SWIG_AsVal_int(swig_obj[3], &val4);
+  ecode3 = SWIG_AsVal_int(swig_obj[2], &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "reactive_affine_shaker" "', argument " "3"" of type '" "int""'");
+  } 
+  arg3 = static_cast< int >(val3);
+  ecode4 = SWIG_AsVal_double(swig_obj[3], &val4);
   if (!SWIG_IsOK(ecode4)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "ras_solver" "', argument " "4"" of type '" "int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "reactive_affine_shaker" "', argument " "4"" of type '" "double""'");
   } 
-  arg4 = static_cast< int >(val4);
-  ecode5 = SWIG_AsVal_double(swig_obj[4], &val5);
-  if (!SWIG_IsOK(ecode5)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode5), "in method '" "ras_solver" "', argument " "5"" of type '" "double""'");
-  } 
-  arg5 = static_cast< double >(val5);
+  arg4 = static_cast< double >(val4);
+  arg5 = swig_obj[4];
   arg6 = swig_obj[5];
-  result = (double)ras_solver(arg1,arg2,arg3,arg4,arg5,arg6);
-  resultobj = SWIG_From_double(static_cast< double >(result));
+  result = (PyObject *)reactive_affine_shaker(arg1,arg2,arg3,arg4,arg5,arg6);
+  resultobj = result;
+  if (!resultobj) SWIG_fail;
   return resultobj;
 fail:
   return NULL;
 }
 
 
-SWIGINTERN PyObject *_wrap_ras_solver__SWIG_9(PyObject *self, Py_ssize_t nobjs, PyObject **swig_obj) {
+SWIGINTERN PyObject *_wrap_reactive_affine_shaker__SWIG_7(PyObject *self, Py_ssize_t nobjs, PyObject **swig_obj) {
   PyObject *resultobj = 0;
   PyObject *arg1 = 0 ;
   int arg2 ;
-  PyObject *arg3 = 0 ;
-  int arg4 ;
-  double arg5 ;
+  int arg3 ;
+  double arg4 ;
+  PyObject *arg5 = 0 ;
   int val2 ;
   int ecode2 = 0 ;
-  int val4 ;
+  int val3 ;
+  int ecode3 = 0 ;
+  double val4 ;
   int ecode4 = 0 ;
-  double val5 ;
-  int ecode5 = 0 ;
-  double result;
+  PyObject *result = 0 ;
   
   (void)self;
   if ((nobjs < 5) || (nobjs > 5)) SWIG_fail;
   arg1 = swig_obj[0];
   ecode2 = SWIG_AsVal_int(swig_obj[1], &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "ras_solver" "', argument " "2"" of type '" "int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "reactive_affine_shaker" "', argument " "2"" of type '" "int""'");
   } 
   arg2 = static_cast< int >(val2);
-  arg3 = swig_obj[2];
-  ecode4 = SWIG_AsVal_int(swig_obj[3], &val4);
+  ecode3 = SWIG_AsVal_int(swig_obj[2], &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "reactive_affine_shaker" "', argument " "3"" of type '" "int""'");
+  } 
+  arg3 = static_cast< int >(val3);
+  ecode4 = SWIG_AsVal_double(swig_obj[3], &val4);
   if (!SWIG_IsOK(ecode4)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "ras_solver" "', argument " "4"" of type '" "int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "reactive_affine_shaker" "', argument " "4"" of type '" "double""'");
   } 
-  arg4 = static_cast< int >(val4);
-  ecode5 = SWIG_AsVal_double(swig_obj[4], &val5);
-  if (!SWIG_IsOK(ecode5)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode5), "in method '" "ras_solver" "', argument " "5"" of type '" "double""'");
-  } 
-  arg5 = static_cast< double >(val5);
-  result = (double)ras_solver(arg1,arg2,arg3,arg4,arg5);
-  resultobj = SWIG_From_double(static_cast< double >(result));
+  arg4 = static_cast< double >(val4);
+  arg5 = swig_obj[4];
+  result = (PyObject *)reactive_affine_shaker(arg1,arg2,arg3,arg4,arg5);
+  resultobj = result;
+  if (!resultobj) SWIG_fail;
   return resultobj;
 fail:
   return NULL;
 }
 
 
-SWIGINTERN PyObject *_wrap_ras_solver__SWIG_10(PyObject *self, Py_ssize_t nobjs, PyObject **swig_obj) {
+SWIGINTERN PyObject *_wrap_reactive_affine_shaker__SWIG_8(PyObject *self, Py_ssize_t nobjs, PyObject **swig_obj) {
   PyObject *resultobj = 0;
   PyObject *arg1 = 0 ;
   int arg2 ;
-  PyObject *arg3 = 0 ;
-  int arg4 ;
+  int arg3 ;
+  double arg4 ;
   int val2 ;
   int ecode2 = 0 ;
-  int val4 ;
+  int val3 ;
+  int ecode3 = 0 ;
+  double val4 ;
   int ecode4 = 0 ;
-  double result;
+  PyObject *result = 0 ;
   
   (void)self;
   if ((nobjs < 4) || (nobjs > 4)) SWIG_fail;
   arg1 = swig_obj[0];
   ecode2 = SWIG_AsVal_int(swig_obj[1], &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "ras_solver" "', argument " "2"" of type '" "int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "reactive_affine_shaker" "', argument " "2"" of type '" "int""'");
   } 
   arg2 = static_cast< int >(val2);
-  arg3 = swig_obj[2];
-  ecode4 = SWIG_AsVal_int(swig_obj[3], &val4);
-  if (!SWIG_IsOK(ecode4)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "ras_solver" "', argument " "4"" of type '" "int""'");
+  ecode3 = SWIG_AsVal_int(swig_obj[2], &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "reactive_affine_shaker" "', argument " "3"" of type '" "int""'");
   } 
-  arg4 = static_cast< int >(val4);
-  result = (double)ras_solver(arg1,arg2,arg3,arg4);
-  resultobj = SWIG_From_double(static_cast< double >(result));
+  arg3 = static_cast< int >(val3);
+  ecode4 = SWIG_AsVal_double(swig_obj[3], &val4);
+  if (!SWIG_IsOK(ecode4)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "reactive_affine_shaker" "', argument " "4"" of type '" "double""'");
+  } 
+  arg4 = static_cast< double >(val4);
+  result = (PyObject *)reactive_affine_shaker(arg1,arg2,arg3,arg4);
+  resultobj = result;
+  if (!resultobj) SWIG_fail;
   return resultobj;
 fail:
   return NULL;
 }
 
 
-SWIGINTERN PyObject *_wrap_ras_solver__SWIG_11(PyObject *self, Py_ssize_t nobjs, PyObject **swig_obj) {
+SWIGINTERN PyObject *_wrap_reactive_affine_shaker__SWIG_9(PyObject *self, Py_ssize_t nobjs, PyObject **swig_obj) {
   PyObject *resultobj = 0;
   PyObject *arg1 = 0 ;
   int arg2 ;
-  PyObject *arg3 = 0 ;
+  int arg3 ;
   int val2 ;
   int ecode2 = 0 ;
-  double result;
+  int val3 ;
+  int ecode3 = 0 ;
+  PyObject *result = 0 ;
   
   (void)self;
   if ((nobjs < 3) || (nobjs > 3)) SWIG_fail;
   arg1 = swig_obj[0];
   ecode2 = SWIG_AsVal_int(swig_obj[1], &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "ras_solver" "', argument " "2"" of type '" "int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "reactive_affine_shaker" "', argument " "2"" of type '" "int""'");
   } 
   arg2 = static_cast< int >(val2);
-  arg3 = swig_obj[2];
-  result = (double)ras_solver(arg1,arg2,arg3);
-  resultobj = SWIG_From_double(static_cast< double >(result));
+  ecode3 = SWIG_AsVal_int(swig_obj[2], &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "reactive_affine_shaker" "', argument " "3"" of type '" "int""'");
+  } 
+  arg3 = static_cast< int >(val3);
+  result = (PyObject *)reactive_affine_shaker(arg1,arg2,arg3);
+  resultobj = result;
+  if (!resultobj) SWIG_fail;
   return resultobj;
 fail:
   return NULL;
 }
 
 
-SWIGINTERN PyObject *_wrap_ras_solver(PyObject *self, PyObject *args) {
+SWIGINTERN PyObject *_wrap_reactive_affine_shaker__SWIG_10(PyObject *self, Py_ssize_t nobjs, PyObject **swig_obj) {
+  PyObject *resultobj = 0;
+  PyObject *arg1 = 0 ;
+  int arg2 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  PyObject *result = 0 ;
+  
+  (void)self;
+  if ((nobjs < 2) || (nobjs > 2)) SWIG_fail;
+  arg1 = swig_obj[0];
+  ecode2 = SWIG_AsVal_int(swig_obj[1], &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "reactive_affine_shaker" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  result = (PyObject *)reactive_affine_shaker(arg1,arg2);
+  resultobj = result;
+  if (!resultobj) SWIG_fail;
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_reactive_affine_shaker(PyObject *self, PyObject *args) {
   Py_ssize_t argc;
-  PyObject *argv[15] = {
+  PyObject *argv[13] = {
     0
   };
   
-  if (!(argc = SWIG_Python_UnpackTuple(args, "ras_solver", 0, 14, argv))) SWIG_fail;
+  if (!(argc = SWIG_Python_UnpackTuple(args, "reactive_affine_shaker", 0, 12, argv))) SWIG_fail;
   --argc;
+  if (argc == 2) {
+    int _v = 0;
+    _v = (argv[0] != 0);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_int(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        return _wrap_reactive_affine_shaker__SWIG_10(self, argc, argv);
+      }
+    }
+  }
   if (argc == 3) {
     int _v = 0;
     _v = (argv[0] != 0);
@@ -4594,9 +4491,12 @@ SWIGINTERN PyObject *_wrap_ras_solver(PyObject *self, PyObject *args) {
         _v = SWIG_CheckState(res);
       }
       if (_v) {
-        _v = (argv[2] != 0);
+        {
+          int res = SWIG_AsVal_int(argv[2], NULL);
+          _v = SWIG_CheckState(res);
+        }
         if (_v) {
-          return _wrap_ras_solver__SWIG_11(self, argc, argv);
+          return _wrap_reactive_affine_shaker__SWIG_9(self, argc, argv);
         }
       }
     }
@@ -4610,14 +4510,17 @@ SWIGINTERN PyObject *_wrap_ras_solver(PyObject *self, PyObject *args) {
         _v = SWIG_CheckState(res);
       }
       if (_v) {
-        _v = (argv[2] != 0);
+        {
+          int res = SWIG_AsVal_int(argv[2], NULL);
+          _v = SWIG_CheckState(res);
+        }
         if (_v) {
           {
-            int res = SWIG_AsVal_int(argv[3], NULL);
+            int res = SWIG_AsVal_double(argv[3], NULL);
             _v = SWIG_CheckState(res);
           }
           if (_v) {
-            return _wrap_ras_solver__SWIG_10(self, argc, argv);
+            return _wrap_reactive_affine_shaker__SWIG_8(self, argc, argv);
           }
         }
       }
@@ -4632,19 +4535,19 @@ SWIGINTERN PyObject *_wrap_ras_solver(PyObject *self, PyObject *args) {
         _v = SWIG_CheckState(res);
       }
       if (_v) {
-        _v = (argv[2] != 0);
+        {
+          int res = SWIG_AsVal_int(argv[2], NULL);
+          _v = SWIG_CheckState(res);
+        }
         if (_v) {
           {
-            int res = SWIG_AsVal_int(argv[3], NULL);
+            int res = SWIG_AsVal_double(argv[3], NULL);
             _v = SWIG_CheckState(res);
           }
           if (_v) {
-            {
-              int res = SWIG_AsVal_double(argv[4], NULL);
-              _v = SWIG_CheckState(res);
-            }
+            _v = (argv[4] != 0);
             if (_v) {
-              return _wrap_ras_solver__SWIG_9(self, argc, argv);
+              return _wrap_reactive_affine_shaker__SWIG_7(self, argc, argv);
             }
           }
         }
@@ -4660,21 +4563,21 @@ SWIGINTERN PyObject *_wrap_ras_solver(PyObject *self, PyObject *args) {
         _v = SWIG_CheckState(res);
       }
       if (_v) {
-        _v = (argv[2] != 0);
+        {
+          int res = SWIG_AsVal_int(argv[2], NULL);
+          _v = SWIG_CheckState(res);
+        }
         if (_v) {
           {
-            int res = SWIG_AsVal_int(argv[3], NULL);
+            int res = SWIG_AsVal_double(argv[3], NULL);
             _v = SWIG_CheckState(res);
           }
           if (_v) {
-            {
-              int res = SWIG_AsVal_double(argv[4], NULL);
-              _v = SWIG_CheckState(res);
-            }
+            _v = (argv[4] != 0);
             if (_v) {
               _v = (argv[5] != 0);
               if (_v) {
-                return _wrap_ras_solver__SWIG_8(self, argc, argv);
+                return _wrap_reactive_affine_shaker__SWIG_6(self, argc, argv);
               }
             }
           }
@@ -4691,23 +4594,26 @@ SWIGINTERN PyObject *_wrap_ras_solver(PyObject *self, PyObject *args) {
         _v = SWIG_CheckState(res);
       }
       if (_v) {
-        _v = (argv[2] != 0);
+        {
+          int res = SWIG_AsVal_int(argv[2], NULL);
+          _v = SWIG_CheckState(res);
+        }
         if (_v) {
           {
-            int res = SWIG_AsVal_int(argv[3], NULL);
+            int res = SWIG_AsVal_double(argv[3], NULL);
             _v = SWIG_CheckState(res);
           }
           if (_v) {
-            {
-              int res = SWIG_AsVal_double(argv[4], NULL);
-              _v = SWIG_CheckState(res);
-            }
+            _v = (argv[4] != 0);
             if (_v) {
               _v = (argv[5] != 0);
               if (_v) {
-                _v = (argv[6] != 0);
+                {
+                  int res = SWIG_AsVal_double(argv[6], NULL);
+                  _v = SWIG_CheckState(res);
+                }
                 if (_v) {
-                  return _wrap_ras_solver__SWIG_7(self, argc, argv);
+                  return _wrap_reactive_affine_shaker__SWIG_5(self, argc, argv);
                 }
               }
             }
@@ -4725,28 +4631,31 @@ SWIGINTERN PyObject *_wrap_ras_solver(PyObject *self, PyObject *args) {
         _v = SWIG_CheckState(res);
       }
       if (_v) {
-        _v = (argv[2] != 0);
+        {
+          int res = SWIG_AsVal_int(argv[2], NULL);
+          _v = SWIG_CheckState(res);
+        }
         if (_v) {
           {
-            int res = SWIG_AsVal_int(argv[3], NULL);
+            int res = SWIG_AsVal_double(argv[3], NULL);
             _v = SWIG_CheckState(res);
           }
           if (_v) {
-            {
-              int res = SWIG_AsVal_double(argv[4], NULL);
-              _v = SWIG_CheckState(res);
-            }
+            _v = (argv[4] != 0);
             if (_v) {
               _v = (argv[5] != 0);
               if (_v) {
-                _v = (argv[6] != 0);
+                {
+                  int res = SWIG_AsVal_double(argv[6], NULL);
+                  _v = SWIG_CheckState(res);
+                }
                 if (_v) {
                   {
-                    int res = SWIG_AsVal_bool(argv[7], NULL);
+                    int res = SWIG_AsVal_double(argv[7], NULL);
                     _v = SWIG_CheckState(res);
                   }
                   if (_v) {
-                    return _wrap_ras_solver__SWIG_6(self, argc, argv);
+                    return _wrap_reactive_affine_shaker__SWIG_4(self, argc, argv);
                   }
                 }
               }
@@ -4765,33 +4674,36 @@ SWIGINTERN PyObject *_wrap_ras_solver(PyObject *self, PyObject *args) {
         _v = SWIG_CheckState(res);
       }
       if (_v) {
-        _v = (argv[2] != 0);
+        {
+          int res = SWIG_AsVal_int(argv[2], NULL);
+          _v = SWIG_CheckState(res);
+        }
         if (_v) {
           {
-            int res = SWIG_AsVal_int(argv[3], NULL);
+            int res = SWIG_AsVal_double(argv[3], NULL);
             _v = SWIG_CheckState(res);
           }
           if (_v) {
-            {
-              int res = SWIG_AsVal_double(argv[4], NULL);
-              _v = SWIG_CheckState(res);
-            }
+            _v = (argv[4] != 0);
             if (_v) {
               _v = (argv[5] != 0);
               if (_v) {
-                _v = (argv[6] != 0);
+                {
+                  int res = SWIG_AsVal_double(argv[6], NULL);
+                  _v = SWIG_CheckState(res);
+                }
                 if (_v) {
                   {
-                    int res = SWIG_AsVal_bool(argv[7], NULL);
+                    int res = SWIG_AsVal_double(argv[7], NULL);
                     _v = SWIG_CheckState(res);
                   }
                   if (_v) {
                     {
-                      int res = SWIG_AsVal_double(argv[8], NULL);
+                      int res = SWIG_AsVal_int(argv[8], NULL);
                       _v = SWIG_CheckState(res);
                     }
                     if (_v) {
-                      return _wrap_ras_solver__SWIG_5(self, argc, argv);
+                      return _wrap_reactive_affine_shaker__SWIG_3(self, argc, argv);
                     }
                   }
                 }
@@ -4811,38 +4723,41 @@ SWIGINTERN PyObject *_wrap_ras_solver(PyObject *self, PyObject *args) {
         _v = SWIG_CheckState(res);
       }
       if (_v) {
-        _v = (argv[2] != 0);
+        {
+          int res = SWIG_AsVal_int(argv[2], NULL);
+          _v = SWIG_CheckState(res);
+        }
         if (_v) {
           {
-            int res = SWIG_AsVal_int(argv[3], NULL);
+            int res = SWIG_AsVal_double(argv[3], NULL);
             _v = SWIG_CheckState(res);
           }
           if (_v) {
-            {
-              int res = SWIG_AsVal_double(argv[4], NULL);
-              _v = SWIG_CheckState(res);
-            }
+            _v = (argv[4] != 0);
             if (_v) {
               _v = (argv[5] != 0);
               if (_v) {
-                _v = (argv[6] != 0);
+                {
+                  int res = SWIG_AsVal_double(argv[6], NULL);
+                  _v = SWIG_CheckState(res);
+                }
                 if (_v) {
                   {
-                    int res = SWIG_AsVal_bool(argv[7], NULL);
+                    int res = SWIG_AsVal_double(argv[7], NULL);
                     _v = SWIG_CheckState(res);
                   }
                   if (_v) {
                     {
-                      int res = SWIG_AsVal_double(argv[8], NULL);
+                      int res = SWIG_AsVal_int(argv[8], NULL);
                       _v = SWIG_CheckState(res);
                     }
                     if (_v) {
                       {
-                        int res = SWIG_AsVal_double(argv[9], NULL);
+                        int res = SWIG_AsVal_int(argv[9], NULL);
                         _v = SWIG_CheckState(res);
                       }
                       if (_v) {
-                        return _wrap_ras_solver__SWIG_4(self, argc, argv);
+                        return _wrap_reactive_affine_shaker__SWIG_2(self, argc, argv);
                       }
                     }
                   }
@@ -4863,43 +4778,46 @@ SWIGINTERN PyObject *_wrap_ras_solver(PyObject *self, PyObject *args) {
         _v = SWIG_CheckState(res);
       }
       if (_v) {
-        _v = (argv[2] != 0);
+        {
+          int res = SWIG_AsVal_int(argv[2], NULL);
+          _v = SWIG_CheckState(res);
+        }
         if (_v) {
           {
-            int res = SWIG_AsVal_int(argv[3], NULL);
+            int res = SWIG_AsVal_double(argv[3], NULL);
             _v = SWIG_CheckState(res);
           }
           if (_v) {
-            {
-              int res = SWIG_AsVal_double(argv[4], NULL);
-              _v = SWIG_CheckState(res);
-            }
+            _v = (argv[4] != 0);
             if (_v) {
               _v = (argv[5] != 0);
               if (_v) {
-                _v = (argv[6] != 0);
+                {
+                  int res = SWIG_AsVal_double(argv[6], NULL);
+                  _v = SWIG_CheckState(res);
+                }
                 if (_v) {
                   {
-                    int res = SWIG_AsVal_bool(argv[7], NULL);
+                    int res = SWIG_AsVal_double(argv[7], NULL);
                     _v = SWIG_CheckState(res);
                   }
                   if (_v) {
                     {
-                      int res = SWIG_AsVal_double(argv[8], NULL);
+                      int res = SWIG_AsVal_int(argv[8], NULL);
                       _v = SWIG_CheckState(res);
                     }
                     if (_v) {
                       {
-                        int res = SWIG_AsVal_double(argv[9], NULL);
+                        int res = SWIG_AsVal_int(argv[9], NULL);
                         _v = SWIG_CheckState(res);
                       }
                       if (_v) {
                         {
-                          int res = SWIG_AsVal_int(argv[10], NULL);
+                          int res = SWIG_AsVal_bool(argv[10], NULL);
                           _v = SWIG_CheckState(res);
                         }
                         if (_v) {
-                          return _wrap_ras_solver__SWIG_3(self, argc, argv);
+                          return _wrap_reactive_affine_shaker__SWIG_1(self, argc, argv);
                         }
                       }
                     }
@@ -4921,194 +4839,51 @@ SWIGINTERN PyObject *_wrap_ras_solver(PyObject *self, PyObject *args) {
         _v = SWIG_CheckState(res);
       }
       if (_v) {
-        _v = (argv[2] != 0);
-        if (_v) {
-          {
-            int res = SWIG_AsVal_int(argv[3], NULL);
-            _v = SWIG_CheckState(res);
-          }
-          if (_v) {
-            {
-              int res = SWIG_AsVal_double(argv[4], NULL);
-              _v = SWIG_CheckState(res);
-            }
-            if (_v) {
-              _v = (argv[5] != 0);
-              if (_v) {
-                _v = (argv[6] != 0);
-                if (_v) {
-                  {
-                    int res = SWIG_AsVal_bool(argv[7], NULL);
-                    _v = SWIG_CheckState(res);
-                  }
-                  if (_v) {
-                    {
-                      int res = SWIG_AsVal_double(argv[8], NULL);
-                      _v = SWIG_CheckState(res);
-                    }
-                    if (_v) {
-                      {
-                        int res = SWIG_AsVal_double(argv[9], NULL);
-                        _v = SWIG_CheckState(res);
-                      }
-                      if (_v) {
-                        {
-                          int res = SWIG_AsVal_int(argv[10], NULL);
-                          _v = SWIG_CheckState(res);
-                        }
-                        if (_v) {
-                          {
-                            int res = SWIG_AsVal_int(argv[11], NULL);
-                            _v = SWIG_CheckState(res);
-                          }
-                          if (_v) {
-                            return _wrap_ras_solver__SWIG_2(self, argc, argv);
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
+        {
+          int res = SWIG_AsVal_int(argv[2], NULL);
+          _v = SWIG_CheckState(res);
         }
-      }
-    }
-  }
-  if (argc == 13) {
-    int _v = 0;
-    _v = (argv[0] != 0);
-    if (_v) {
-      {
-        int res = SWIG_AsVal_int(argv[1], NULL);
-        _v = SWIG_CheckState(res);
-      }
-      if (_v) {
-        _v = (argv[2] != 0);
         if (_v) {
           {
-            int res = SWIG_AsVal_int(argv[3], NULL);
+            int res = SWIG_AsVal_double(argv[3], NULL);
             _v = SWIG_CheckState(res);
           }
           if (_v) {
-            {
-              int res = SWIG_AsVal_double(argv[4], NULL);
-              _v = SWIG_CheckState(res);
-            }
+            _v = (argv[4] != 0);
             if (_v) {
               _v = (argv[5] != 0);
               if (_v) {
-                _v = (argv[6] != 0);
-                if (_v) {
-                  {
-                    int res = SWIG_AsVal_bool(argv[7], NULL);
-                    _v = SWIG_CheckState(res);
-                  }
-                  if (_v) {
-                    {
-                      int res = SWIG_AsVal_double(argv[8], NULL);
-                      _v = SWIG_CheckState(res);
-                    }
-                    if (_v) {
-                      {
-                        int res = SWIG_AsVal_double(argv[9], NULL);
-                        _v = SWIG_CheckState(res);
-                      }
-                      if (_v) {
-                        {
-                          int res = SWIG_AsVal_int(argv[10], NULL);
-                          _v = SWIG_CheckState(res);
-                        }
-                        if (_v) {
-                          {
-                            int res = SWIG_AsVal_int(argv[11], NULL);
-                            _v = SWIG_CheckState(res);
-                          }
-                          if (_v) {
-                            {
-                              int res = SWIG_AsVal_bool(argv[12], NULL);
-                              _v = SWIG_CheckState(res);
-                            }
-                            if (_v) {
-                              return _wrap_ras_solver__SWIG_1(self, argc, argv);
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
+                {
+                  int res = SWIG_AsVal_double(argv[6], NULL);
+                  _v = SWIG_CheckState(res);
                 }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  if (argc == 14) {
-    int _v = 0;
-    _v = (argv[0] != 0);
-    if (_v) {
-      {
-        int res = SWIG_AsVal_int(argv[1], NULL);
-        _v = SWIG_CheckState(res);
-      }
-      if (_v) {
-        _v = (argv[2] != 0);
-        if (_v) {
-          {
-            int res = SWIG_AsVal_int(argv[3], NULL);
-            _v = SWIG_CheckState(res);
-          }
-          if (_v) {
-            {
-              int res = SWIG_AsVal_double(argv[4], NULL);
-              _v = SWIG_CheckState(res);
-            }
-            if (_v) {
-              _v = (argv[5] != 0);
-              if (_v) {
-                _v = (argv[6] != 0);
                 if (_v) {
                   {
-                    int res = SWIG_AsVal_bool(argv[7], NULL);
+                    int res = SWIG_AsVal_double(argv[7], NULL);
                     _v = SWIG_CheckState(res);
                   }
                   if (_v) {
                     {
-                      int res = SWIG_AsVal_double(argv[8], NULL);
+                      int res = SWIG_AsVal_int(argv[8], NULL);
                       _v = SWIG_CheckState(res);
                     }
                     if (_v) {
                       {
-                        int res = SWIG_AsVal_double(argv[9], NULL);
+                        int res = SWIG_AsVal_int(argv[9], NULL);
                         _v = SWIG_CheckState(res);
                       }
                       if (_v) {
                         {
-                          int res = SWIG_AsVal_int(argv[10], NULL);
+                          int res = SWIG_AsVal_bool(argv[10], NULL);
                           _v = SWIG_CheckState(res);
                         }
                         if (_v) {
                           {
-                            int res = SWIG_AsVal_int(argv[11], NULL);
+                            int res = SWIG_AsVal_bool(argv[11], NULL);
                             _v = SWIG_CheckState(res);
                           }
                           if (_v) {
-                            {
-                              int res = SWIG_AsVal_bool(argv[12], NULL);
-                              _v = SWIG_CheckState(res);
-                            }
-                            if (_v) {
-                              {
-                                int res = SWIG_AsVal_bool(argv[13], NULL);
-                                _v = SWIG_CheckState(res);
-                              }
-                              if (_v) {
-                                return _wrap_ras_solver__SWIG_0(self, argc, argv);
-                              }
-                            }
+                            return _wrap_reactive_affine_shaker__SWIG_0(self, argc, argv);
                           }
                         }
                       }
@@ -5124,26 +4899,1106 @@ SWIGINTERN PyObject *_wrap_ras_solver(PyObject *self, PyObject *args) {
   }
   
 fail:
-  SWIG_Python_RaiseOrModifyTypeError("Wrong number or type of arguments for overloaded function 'ras_solver'.\n"
+  SWIG_Python_RaiseOrModifyTypeError("Wrong number or type of arguments for overloaded function 'reactive_affine_shaker'.\n"
     "  Possible C/C++ prototypes are:\n"
-    "    ras_solver(PyObject *,int,PyObject *,int,double,PyObject *,PyObject *,bool,double,double,int,int,bool,bool)\n"
-    "    ras_solver(PyObject *,int,PyObject *,int,double,PyObject *,PyObject *,bool,double,double,int,int,bool)\n"
-    "    ras_solver(PyObject *,int,PyObject *,int,double,PyObject *,PyObject *,bool,double,double,int,int)\n"
-    "    ras_solver(PyObject *,int,PyObject *,int,double,PyObject *,PyObject *,bool,double,double,int)\n"
-    "    ras_solver(PyObject *,int,PyObject *,int,double,PyObject *,PyObject *,bool,double,double)\n"
-    "    ras_solver(PyObject *,int,PyObject *,int,double,PyObject *,PyObject *,bool,double)\n"
-    "    ras_solver(PyObject *,int,PyObject *,int,double,PyObject *,PyObject *,bool)\n"
-    "    ras_solver(PyObject *,int,PyObject *,int,double,PyObject *,PyObject *)\n"
-    "    ras_solver(PyObject *,int,PyObject *,int,double,PyObject *)\n"
-    "    ras_solver(PyObject *,int,PyObject *,int,double)\n"
-    "    ras_solver(PyObject *,int,PyObject *,int)\n"
-    "    ras_solver(PyObject *,int,PyObject *)\n");
+    "    reactive_affine_shaker(PyObject *,int,int,double,PyObject *,PyObject *,double,double,int,int,bool,bool)\n"
+    "    reactive_affine_shaker(PyObject *,int,int,double,PyObject *,PyObject *,double,double,int,int,bool)\n"
+    "    reactive_affine_shaker(PyObject *,int,int,double,PyObject *,PyObject *,double,double,int,int)\n"
+    "    reactive_affine_shaker(PyObject *,int,int,double,PyObject *,PyObject *,double,double,int)\n"
+    "    reactive_affine_shaker(PyObject *,int,int,double,PyObject *,PyObject *,double,double)\n"
+    "    reactive_affine_shaker(PyObject *,int,int,double,PyObject *,PyObject *,double)\n"
+    "    reactive_affine_shaker(PyObject *,int,int,double,PyObject *,PyObject *)\n"
+    "    reactive_affine_shaker(PyObject *,int,int,double,PyObject *)\n"
+    "    reactive_affine_shaker(PyObject *,int,int,double)\n"
+    "    reactive_affine_shaker(PyObject *,int,int)\n"
+    "    reactive_affine_shaker(PyObject *,int)\n");
+  return 0;
+}
+
+
+SWIGINTERN PyObject *_wrap_inertial_shaker__SWIG_0(PyObject *self, Py_ssize_t nobjs, PyObject **swig_obj) {
+  PyObject *resultobj = 0;
+  PyObject *arg1 = 0 ;
+  int arg2 ;
+  int arg3 ;
+  double arg4 ;
+  PyObject *arg5 = 0 ;
+  PyObject *arg6 = 0 ;
+  double arg7 ;
+  double arg8 ;
+  int arg9 ;
+  int arg10 ;
+  bool arg11 ;
+  bool arg12 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  int val3 ;
+  int ecode3 = 0 ;
+  double val4 ;
+  int ecode4 = 0 ;
+  double val7 ;
+  int ecode7 = 0 ;
+  double val8 ;
+  int ecode8 = 0 ;
+  int val9 ;
+  int ecode9 = 0 ;
+  int val10 ;
+  int ecode10 = 0 ;
+  bool val11 ;
+  int ecode11 = 0 ;
+  bool val12 ;
+  int ecode12 = 0 ;
+  PyObject *result = 0 ;
+  
+  (void)self;
+  if ((nobjs < 12) || (nobjs > 12)) SWIG_fail;
+  arg1 = swig_obj[0];
+  ecode2 = SWIG_AsVal_int(swig_obj[1], &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "inertial_shaker" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  ecode3 = SWIG_AsVal_int(swig_obj[2], &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "inertial_shaker" "', argument " "3"" of type '" "int""'");
+  } 
+  arg3 = static_cast< int >(val3);
+  ecode4 = SWIG_AsVal_double(swig_obj[3], &val4);
+  if (!SWIG_IsOK(ecode4)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "inertial_shaker" "', argument " "4"" of type '" "double""'");
+  } 
+  arg4 = static_cast< double >(val4);
+  arg5 = swig_obj[4];
+  arg6 = swig_obj[5];
+  ecode7 = SWIG_AsVal_double(swig_obj[6], &val7);
+  if (!SWIG_IsOK(ecode7)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode7), "in method '" "inertial_shaker" "', argument " "7"" of type '" "double""'");
+  } 
+  arg7 = static_cast< double >(val7);
+  ecode8 = SWIG_AsVal_double(swig_obj[7], &val8);
+  if (!SWIG_IsOK(ecode8)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode8), "in method '" "inertial_shaker" "', argument " "8"" of type '" "double""'");
+  } 
+  arg8 = static_cast< double >(val8);
+  ecode9 = SWIG_AsVal_int(swig_obj[8], &val9);
+  if (!SWIG_IsOK(ecode9)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode9), "in method '" "inertial_shaker" "', argument " "9"" of type '" "int""'");
+  } 
+  arg9 = static_cast< int >(val9);
+  ecode10 = SWIG_AsVal_int(swig_obj[9], &val10);
+  if (!SWIG_IsOK(ecode10)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode10), "in method '" "inertial_shaker" "', argument " "10"" of type '" "int""'");
+  } 
+  arg10 = static_cast< int >(val10);
+  ecode11 = SWIG_AsVal_bool(swig_obj[10], &val11);
+  if (!SWIG_IsOK(ecode11)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode11), "in method '" "inertial_shaker" "', argument " "11"" of type '" "bool""'");
+  } 
+  arg11 = static_cast< bool >(val11);
+  ecode12 = SWIG_AsVal_bool(swig_obj[11], &val12);
+  if (!SWIG_IsOK(ecode12)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode12), "in method '" "inertial_shaker" "', argument " "12"" of type '" "bool""'");
+  } 
+  arg12 = static_cast< bool >(val12);
+  result = (PyObject *)inertial_shaker(arg1,arg2,arg3,arg4,arg5,arg6,arg7,arg8,arg9,arg10,arg11,arg12);
+  resultobj = result;
+  if (!resultobj) SWIG_fail;
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_inertial_shaker__SWIG_1(PyObject *self, Py_ssize_t nobjs, PyObject **swig_obj) {
+  PyObject *resultobj = 0;
+  PyObject *arg1 = 0 ;
+  int arg2 ;
+  int arg3 ;
+  double arg4 ;
+  PyObject *arg5 = 0 ;
+  PyObject *arg6 = 0 ;
+  double arg7 ;
+  double arg8 ;
+  int arg9 ;
+  int arg10 ;
+  bool arg11 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  int val3 ;
+  int ecode3 = 0 ;
+  double val4 ;
+  int ecode4 = 0 ;
+  double val7 ;
+  int ecode7 = 0 ;
+  double val8 ;
+  int ecode8 = 0 ;
+  int val9 ;
+  int ecode9 = 0 ;
+  int val10 ;
+  int ecode10 = 0 ;
+  bool val11 ;
+  int ecode11 = 0 ;
+  PyObject *result = 0 ;
+  
+  (void)self;
+  if ((nobjs < 11) || (nobjs > 11)) SWIG_fail;
+  arg1 = swig_obj[0];
+  ecode2 = SWIG_AsVal_int(swig_obj[1], &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "inertial_shaker" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  ecode3 = SWIG_AsVal_int(swig_obj[2], &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "inertial_shaker" "', argument " "3"" of type '" "int""'");
+  } 
+  arg3 = static_cast< int >(val3);
+  ecode4 = SWIG_AsVal_double(swig_obj[3], &val4);
+  if (!SWIG_IsOK(ecode4)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "inertial_shaker" "', argument " "4"" of type '" "double""'");
+  } 
+  arg4 = static_cast< double >(val4);
+  arg5 = swig_obj[4];
+  arg6 = swig_obj[5];
+  ecode7 = SWIG_AsVal_double(swig_obj[6], &val7);
+  if (!SWIG_IsOK(ecode7)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode7), "in method '" "inertial_shaker" "', argument " "7"" of type '" "double""'");
+  } 
+  arg7 = static_cast< double >(val7);
+  ecode8 = SWIG_AsVal_double(swig_obj[7], &val8);
+  if (!SWIG_IsOK(ecode8)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode8), "in method '" "inertial_shaker" "', argument " "8"" of type '" "double""'");
+  } 
+  arg8 = static_cast< double >(val8);
+  ecode9 = SWIG_AsVal_int(swig_obj[8], &val9);
+  if (!SWIG_IsOK(ecode9)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode9), "in method '" "inertial_shaker" "', argument " "9"" of type '" "int""'");
+  } 
+  arg9 = static_cast< int >(val9);
+  ecode10 = SWIG_AsVal_int(swig_obj[9], &val10);
+  if (!SWIG_IsOK(ecode10)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode10), "in method '" "inertial_shaker" "', argument " "10"" of type '" "int""'");
+  } 
+  arg10 = static_cast< int >(val10);
+  ecode11 = SWIG_AsVal_bool(swig_obj[10], &val11);
+  if (!SWIG_IsOK(ecode11)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode11), "in method '" "inertial_shaker" "', argument " "11"" of type '" "bool""'");
+  } 
+  arg11 = static_cast< bool >(val11);
+  result = (PyObject *)inertial_shaker(arg1,arg2,arg3,arg4,arg5,arg6,arg7,arg8,arg9,arg10,arg11);
+  resultobj = result;
+  if (!resultobj) SWIG_fail;
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_inertial_shaker__SWIG_2(PyObject *self, Py_ssize_t nobjs, PyObject **swig_obj) {
+  PyObject *resultobj = 0;
+  PyObject *arg1 = 0 ;
+  int arg2 ;
+  int arg3 ;
+  double arg4 ;
+  PyObject *arg5 = 0 ;
+  PyObject *arg6 = 0 ;
+  double arg7 ;
+  double arg8 ;
+  int arg9 ;
+  int arg10 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  int val3 ;
+  int ecode3 = 0 ;
+  double val4 ;
+  int ecode4 = 0 ;
+  double val7 ;
+  int ecode7 = 0 ;
+  double val8 ;
+  int ecode8 = 0 ;
+  int val9 ;
+  int ecode9 = 0 ;
+  int val10 ;
+  int ecode10 = 0 ;
+  PyObject *result = 0 ;
+  
+  (void)self;
+  if ((nobjs < 10) || (nobjs > 10)) SWIG_fail;
+  arg1 = swig_obj[0];
+  ecode2 = SWIG_AsVal_int(swig_obj[1], &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "inertial_shaker" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  ecode3 = SWIG_AsVal_int(swig_obj[2], &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "inertial_shaker" "', argument " "3"" of type '" "int""'");
+  } 
+  arg3 = static_cast< int >(val3);
+  ecode4 = SWIG_AsVal_double(swig_obj[3], &val4);
+  if (!SWIG_IsOK(ecode4)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "inertial_shaker" "', argument " "4"" of type '" "double""'");
+  } 
+  arg4 = static_cast< double >(val4);
+  arg5 = swig_obj[4];
+  arg6 = swig_obj[5];
+  ecode7 = SWIG_AsVal_double(swig_obj[6], &val7);
+  if (!SWIG_IsOK(ecode7)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode7), "in method '" "inertial_shaker" "', argument " "7"" of type '" "double""'");
+  } 
+  arg7 = static_cast< double >(val7);
+  ecode8 = SWIG_AsVal_double(swig_obj[7], &val8);
+  if (!SWIG_IsOK(ecode8)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode8), "in method '" "inertial_shaker" "', argument " "8"" of type '" "double""'");
+  } 
+  arg8 = static_cast< double >(val8);
+  ecode9 = SWIG_AsVal_int(swig_obj[8], &val9);
+  if (!SWIG_IsOK(ecode9)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode9), "in method '" "inertial_shaker" "', argument " "9"" of type '" "int""'");
+  } 
+  arg9 = static_cast< int >(val9);
+  ecode10 = SWIG_AsVal_int(swig_obj[9], &val10);
+  if (!SWIG_IsOK(ecode10)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode10), "in method '" "inertial_shaker" "', argument " "10"" of type '" "int""'");
+  } 
+  arg10 = static_cast< int >(val10);
+  result = (PyObject *)inertial_shaker(arg1,arg2,arg3,arg4,arg5,arg6,arg7,arg8,arg9,arg10);
+  resultobj = result;
+  if (!resultobj) SWIG_fail;
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_inertial_shaker__SWIG_3(PyObject *self, Py_ssize_t nobjs, PyObject **swig_obj) {
+  PyObject *resultobj = 0;
+  PyObject *arg1 = 0 ;
+  int arg2 ;
+  int arg3 ;
+  double arg4 ;
+  PyObject *arg5 = 0 ;
+  PyObject *arg6 = 0 ;
+  double arg7 ;
+  double arg8 ;
+  int arg9 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  int val3 ;
+  int ecode3 = 0 ;
+  double val4 ;
+  int ecode4 = 0 ;
+  double val7 ;
+  int ecode7 = 0 ;
+  double val8 ;
+  int ecode8 = 0 ;
+  int val9 ;
+  int ecode9 = 0 ;
+  PyObject *result = 0 ;
+  
+  (void)self;
+  if ((nobjs < 9) || (nobjs > 9)) SWIG_fail;
+  arg1 = swig_obj[0];
+  ecode2 = SWIG_AsVal_int(swig_obj[1], &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "inertial_shaker" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  ecode3 = SWIG_AsVal_int(swig_obj[2], &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "inertial_shaker" "', argument " "3"" of type '" "int""'");
+  } 
+  arg3 = static_cast< int >(val3);
+  ecode4 = SWIG_AsVal_double(swig_obj[3], &val4);
+  if (!SWIG_IsOK(ecode4)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "inertial_shaker" "', argument " "4"" of type '" "double""'");
+  } 
+  arg4 = static_cast< double >(val4);
+  arg5 = swig_obj[4];
+  arg6 = swig_obj[5];
+  ecode7 = SWIG_AsVal_double(swig_obj[6], &val7);
+  if (!SWIG_IsOK(ecode7)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode7), "in method '" "inertial_shaker" "', argument " "7"" of type '" "double""'");
+  } 
+  arg7 = static_cast< double >(val7);
+  ecode8 = SWIG_AsVal_double(swig_obj[7], &val8);
+  if (!SWIG_IsOK(ecode8)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode8), "in method '" "inertial_shaker" "', argument " "8"" of type '" "double""'");
+  } 
+  arg8 = static_cast< double >(val8);
+  ecode9 = SWIG_AsVal_int(swig_obj[8], &val9);
+  if (!SWIG_IsOK(ecode9)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode9), "in method '" "inertial_shaker" "', argument " "9"" of type '" "int""'");
+  } 
+  arg9 = static_cast< int >(val9);
+  result = (PyObject *)inertial_shaker(arg1,arg2,arg3,arg4,arg5,arg6,arg7,arg8,arg9);
+  resultobj = result;
+  if (!resultobj) SWIG_fail;
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_inertial_shaker__SWIG_4(PyObject *self, Py_ssize_t nobjs, PyObject **swig_obj) {
+  PyObject *resultobj = 0;
+  PyObject *arg1 = 0 ;
+  int arg2 ;
+  int arg3 ;
+  double arg4 ;
+  PyObject *arg5 = 0 ;
+  PyObject *arg6 = 0 ;
+  double arg7 ;
+  double arg8 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  int val3 ;
+  int ecode3 = 0 ;
+  double val4 ;
+  int ecode4 = 0 ;
+  double val7 ;
+  int ecode7 = 0 ;
+  double val8 ;
+  int ecode8 = 0 ;
+  PyObject *result = 0 ;
+  
+  (void)self;
+  if ((nobjs < 8) || (nobjs > 8)) SWIG_fail;
+  arg1 = swig_obj[0];
+  ecode2 = SWIG_AsVal_int(swig_obj[1], &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "inertial_shaker" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  ecode3 = SWIG_AsVal_int(swig_obj[2], &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "inertial_shaker" "', argument " "3"" of type '" "int""'");
+  } 
+  arg3 = static_cast< int >(val3);
+  ecode4 = SWIG_AsVal_double(swig_obj[3], &val4);
+  if (!SWIG_IsOK(ecode4)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "inertial_shaker" "', argument " "4"" of type '" "double""'");
+  } 
+  arg4 = static_cast< double >(val4);
+  arg5 = swig_obj[4];
+  arg6 = swig_obj[5];
+  ecode7 = SWIG_AsVal_double(swig_obj[6], &val7);
+  if (!SWIG_IsOK(ecode7)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode7), "in method '" "inertial_shaker" "', argument " "7"" of type '" "double""'");
+  } 
+  arg7 = static_cast< double >(val7);
+  ecode8 = SWIG_AsVal_double(swig_obj[7], &val8);
+  if (!SWIG_IsOK(ecode8)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode8), "in method '" "inertial_shaker" "', argument " "8"" of type '" "double""'");
+  } 
+  arg8 = static_cast< double >(val8);
+  result = (PyObject *)inertial_shaker(arg1,arg2,arg3,arg4,arg5,arg6,arg7,arg8);
+  resultobj = result;
+  if (!resultobj) SWIG_fail;
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_inertial_shaker__SWIG_5(PyObject *self, Py_ssize_t nobjs, PyObject **swig_obj) {
+  PyObject *resultobj = 0;
+  PyObject *arg1 = 0 ;
+  int arg2 ;
+  int arg3 ;
+  double arg4 ;
+  PyObject *arg5 = 0 ;
+  PyObject *arg6 = 0 ;
+  double arg7 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  int val3 ;
+  int ecode3 = 0 ;
+  double val4 ;
+  int ecode4 = 0 ;
+  double val7 ;
+  int ecode7 = 0 ;
+  PyObject *result = 0 ;
+  
+  (void)self;
+  if ((nobjs < 7) || (nobjs > 7)) SWIG_fail;
+  arg1 = swig_obj[0];
+  ecode2 = SWIG_AsVal_int(swig_obj[1], &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "inertial_shaker" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  ecode3 = SWIG_AsVal_int(swig_obj[2], &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "inertial_shaker" "', argument " "3"" of type '" "int""'");
+  } 
+  arg3 = static_cast< int >(val3);
+  ecode4 = SWIG_AsVal_double(swig_obj[3], &val4);
+  if (!SWIG_IsOK(ecode4)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "inertial_shaker" "', argument " "4"" of type '" "double""'");
+  } 
+  arg4 = static_cast< double >(val4);
+  arg5 = swig_obj[4];
+  arg6 = swig_obj[5];
+  ecode7 = SWIG_AsVal_double(swig_obj[6], &val7);
+  if (!SWIG_IsOK(ecode7)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode7), "in method '" "inertial_shaker" "', argument " "7"" of type '" "double""'");
+  } 
+  arg7 = static_cast< double >(val7);
+  result = (PyObject *)inertial_shaker(arg1,arg2,arg3,arg4,arg5,arg6,arg7);
+  resultobj = result;
+  if (!resultobj) SWIG_fail;
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_inertial_shaker__SWIG_6(PyObject *self, Py_ssize_t nobjs, PyObject **swig_obj) {
+  PyObject *resultobj = 0;
+  PyObject *arg1 = 0 ;
+  int arg2 ;
+  int arg3 ;
+  double arg4 ;
+  PyObject *arg5 = 0 ;
+  PyObject *arg6 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  int val3 ;
+  int ecode3 = 0 ;
+  double val4 ;
+  int ecode4 = 0 ;
+  PyObject *result = 0 ;
+  
+  (void)self;
+  if ((nobjs < 6) || (nobjs > 6)) SWIG_fail;
+  arg1 = swig_obj[0];
+  ecode2 = SWIG_AsVal_int(swig_obj[1], &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "inertial_shaker" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  ecode3 = SWIG_AsVal_int(swig_obj[2], &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "inertial_shaker" "', argument " "3"" of type '" "int""'");
+  } 
+  arg3 = static_cast< int >(val3);
+  ecode4 = SWIG_AsVal_double(swig_obj[3], &val4);
+  if (!SWIG_IsOK(ecode4)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "inertial_shaker" "', argument " "4"" of type '" "double""'");
+  } 
+  arg4 = static_cast< double >(val4);
+  arg5 = swig_obj[4];
+  arg6 = swig_obj[5];
+  result = (PyObject *)inertial_shaker(arg1,arg2,arg3,arg4,arg5,arg6);
+  resultobj = result;
+  if (!resultobj) SWIG_fail;
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_inertial_shaker__SWIG_7(PyObject *self, Py_ssize_t nobjs, PyObject **swig_obj) {
+  PyObject *resultobj = 0;
+  PyObject *arg1 = 0 ;
+  int arg2 ;
+  int arg3 ;
+  double arg4 ;
+  PyObject *arg5 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  int val3 ;
+  int ecode3 = 0 ;
+  double val4 ;
+  int ecode4 = 0 ;
+  PyObject *result = 0 ;
+  
+  (void)self;
+  if ((nobjs < 5) || (nobjs > 5)) SWIG_fail;
+  arg1 = swig_obj[0];
+  ecode2 = SWIG_AsVal_int(swig_obj[1], &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "inertial_shaker" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  ecode3 = SWIG_AsVal_int(swig_obj[2], &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "inertial_shaker" "', argument " "3"" of type '" "int""'");
+  } 
+  arg3 = static_cast< int >(val3);
+  ecode4 = SWIG_AsVal_double(swig_obj[3], &val4);
+  if (!SWIG_IsOK(ecode4)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "inertial_shaker" "', argument " "4"" of type '" "double""'");
+  } 
+  arg4 = static_cast< double >(val4);
+  arg5 = swig_obj[4];
+  result = (PyObject *)inertial_shaker(arg1,arg2,arg3,arg4,arg5);
+  resultobj = result;
+  if (!resultobj) SWIG_fail;
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_inertial_shaker__SWIG_8(PyObject *self, Py_ssize_t nobjs, PyObject **swig_obj) {
+  PyObject *resultobj = 0;
+  PyObject *arg1 = 0 ;
+  int arg2 ;
+  int arg3 ;
+  double arg4 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  int val3 ;
+  int ecode3 = 0 ;
+  double val4 ;
+  int ecode4 = 0 ;
+  PyObject *result = 0 ;
+  
+  (void)self;
+  if ((nobjs < 4) || (nobjs > 4)) SWIG_fail;
+  arg1 = swig_obj[0];
+  ecode2 = SWIG_AsVal_int(swig_obj[1], &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "inertial_shaker" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  ecode3 = SWIG_AsVal_int(swig_obj[2], &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "inertial_shaker" "', argument " "3"" of type '" "int""'");
+  } 
+  arg3 = static_cast< int >(val3);
+  ecode4 = SWIG_AsVal_double(swig_obj[3], &val4);
+  if (!SWIG_IsOK(ecode4)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "inertial_shaker" "', argument " "4"" of type '" "double""'");
+  } 
+  arg4 = static_cast< double >(val4);
+  result = (PyObject *)inertial_shaker(arg1,arg2,arg3,arg4);
+  resultobj = result;
+  if (!resultobj) SWIG_fail;
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_inertial_shaker__SWIG_9(PyObject *self, Py_ssize_t nobjs, PyObject **swig_obj) {
+  PyObject *resultobj = 0;
+  PyObject *arg1 = 0 ;
+  int arg2 ;
+  int arg3 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  int val3 ;
+  int ecode3 = 0 ;
+  PyObject *result = 0 ;
+  
+  (void)self;
+  if ((nobjs < 3) || (nobjs > 3)) SWIG_fail;
+  arg1 = swig_obj[0];
+  ecode2 = SWIG_AsVal_int(swig_obj[1], &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "inertial_shaker" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  ecode3 = SWIG_AsVal_int(swig_obj[2], &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "inertial_shaker" "', argument " "3"" of type '" "int""'");
+  } 
+  arg3 = static_cast< int >(val3);
+  result = (PyObject *)inertial_shaker(arg1,arg2,arg3);
+  resultobj = result;
+  if (!resultobj) SWIG_fail;
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_inertial_shaker__SWIG_10(PyObject *self, Py_ssize_t nobjs, PyObject **swig_obj) {
+  PyObject *resultobj = 0;
+  PyObject *arg1 = 0 ;
+  int arg2 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  PyObject *result = 0 ;
+  
+  (void)self;
+  if ((nobjs < 2) || (nobjs > 2)) SWIG_fail;
+  arg1 = swig_obj[0];
+  ecode2 = SWIG_AsVal_int(swig_obj[1], &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "inertial_shaker" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  result = (PyObject *)inertial_shaker(arg1,arg2);
+  resultobj = result;
+  if (!resultobj) SWIG_fail;
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_inertial_shaker(PyObject *self, PyObject *args) {
+  Py_ssize_t argc;
+  PyObject *argv[13] = {
+    0
+  };
+  
+  if (!(argc = SWIG_Python_UnpackTuple(args, "inertial_shaker", 0, 12, argv))) SWIG_fail;
+  --argc;
+  if (argc == 2) {
+    int _v = 0;
+    _v = (argv[0] != 0);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_int(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        return _wrap_inertial_shaker__SWIG_10(self, argc, argv);
+      }
+    }
+  }
+  if (argc == 3) {
+    int _v = 0;
+    _v = (argv[0] != 0);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_int(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        {
+          int res = SWIG_AsVal_int(argv[2], NULL);
+          _v = SWIG_CheckState(res);
+        }
+        if (_v) {
+          return _wrap_inertial_shaker__SWIG_9(self, argc, argv);
+        }
+      }
+    }
+  }
+  if (argc == 4) {
+    int _v = 0;
+    _v = (argv[0] != 0);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_int(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        {
+          int res = SWIG_AsVal_int(argv[2], NULL);
+          _v = SWIG_CheckState(res);
+        }
+        if (_v) {
+          {
+            int res = SWIG_AsVal_double(argv[3], NULL);
+            _v = SWIG_CheckState(res);
+          }
+          if (_v) {
+            return _wrap_inertial_shaker__SWIG_8(self, argc, argv);
+          }
+        }
+      }
+    }
+  }
+  if (argc == 5) {
+    int _v = 0;
+    _v = (argv[0] != 0);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_int(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        {
+          int res = SWIG_AsVal_int(argv[2], NULL);
+          _v = SWIG_CheckState(res);
+        }
+        if (_v) {
+          {
+            int res = SWIG_AsVal_double(argv[3], NULL);
+            _v = SWIG_CheckState(res);
+          }
+          if (_v) {
+            _v = (argv[4] != 0);
+            if (_v) {
+              return _wrap_inertial_shaker__SWIG_7(self, argc, argv);
+            }
+          }
+        }
+      }
+    }
+  }
+  if (argc == 6) {
+    int _v = 0;
+    _v = (argv[0] != 0);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_int(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        {
+          int res = SWIG_AsVal_int(argv[2], NULL);
+          _v = SWIG_CheckState(res);
+        }
+        if (_v) {
+          {
+            int res = SWIG_AsVal_double(argv[3], NULL);
+            _v = SWIG_CheckState(res);
+          }
+          if (_v) {
+            _v = (argv[4] != 0);
+            if (_v) {
+              _v = (argv[5] != 0);
+              if (_v) {
+                return _wrap_inertial_shaker__SWIG_6(self, argc, argv);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  if (argc == 7) {
+    int _v = 0;
+    _v = (argv[0] != 0);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_int(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        {
+          int res = SWIG_AsVal_int(argv[2], NULL);
+          _v = SWIG_CheckState(res);
+        }
+        if (_v) {
+          {
+            int res = SWIG_AsVal_double(argv[3], NULL);
+            _v = SWIG_CheckState(res);
+          }
+          if (_v) {
+            _v = (argv[4] != 0);
+            if (_v) {
+              _v = (argv[5] != 0);
+              if (_v) {
+                {
+                  int res = SWIG_AsVal_double(argv[6], NULL);
+                  _v = SWIG_CheckState(res);
+                }
+                if (_v) {
+                  return _wrap_inertial_shaker__SWIG_5(self, argc, argv);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  if (argc == 8) {
+    int _v = 0;
+    _v = (argv[0] != 0);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_int(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        {
+          int res = SWIG_AsVal_int(argv[2], NULL);
+          _v = SWIG_CheckState(res);
+        }
+        if (_v) {
+          {
+            int res = SWIG_AsVal_double(argv[3], NULL);
+            _v = SWIG_CheckState(res);
+          }
+          if (_v) {
+            _v = (argv[4] != 0);
+            if (_v) {
+              _v = (argv[5] != 0);
+              if (_v) {
+                {
+                  int res = SWIG_AsVal_double(argv[6], NULL);
+                  _v = SWIG_CheckState(res);
+                }
+                if (_v) {
+                  {
+                    int res = SWIG_AsVal_double(argv[7], NULL);
+                    _v = SWIG_CheckState(res);
+                  }
+                  if (_v) {
+                    return _wrap_inertial_shaker__SWIG_4(self, argc, argv);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  if (argc == 9) {
+    int _v = 0;
+    _v = (argv[0] != 0);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_int(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        {
+          int res = SWIG_AsVal_int(argv[2], NULL);
+          _v = SWIG_CheckState(res);
+        }
+        if (_v) {
+          {
+            int res = SWIG_AsVal_double(argv[3], NULL);
+            _v = SWIG_CheckState(res);
+          }
+          if (_v) {
+            _v = (argv[4] != 0);
+            if (_v) {
+              _v = (argv[5] != 0);
+              if (_v) {
+                {
+                  int res = SWIG_AsVal_double(argv[6], NULL);
+                  _v = SWIG_CheckState(res);
+                }
+                if (_v) {
+                  {
+                    int res = SWIG_AsVal_double(argv[7], NULL);
+                    _v = SWIG_CheckState(res);
+                  }
+                  if (_v) {
+                    {
+                      int res = SWIG_AsVal_int(argv[8], NULL);
+                      _v = SWIG_CheckState(res);
+                    }
+                    if (_v) {
+                      return _wrap_inertial_shaker__SWIG_3(self, argc, argv);
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  if (argc == 10) {
+    int _v = 0;
+    _v = (argv[0] != 0);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_int(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        {
+          int res = SWIG_AsVal_int(argv[2], NULL);
+          _v = SWIG_CheckState(res);
+        }
+        if (_v) {
+          {
+            int res = SWIG_AsVal_double(argv[3], NULL);
+            _v = SWIG_CheckState(res);
+          }
+          if (_v) {
+            _v = (argv[4] != 0);
+            if (_v) {
+              _v = (argv[5] != 0);
+              if (_v) {
+                {
+                  int res = SWIG_AsVal_double(argv[6], NULL);
+                  _v = SWIG_CheckState(res);
+                }
+                if (_v) {
+                  {
+                    int res = SWIG_AsVal_double(argv[7], NULL);
+                    _v = SWIG_CheckState(res);
+                  }
+                  if (_v) {
+                    {
+                      int res = SWIG_AsVal_int(argv[8], NULL);
+                      _v = SWIG_CheckState(res);
+                    }
+                    if (_v) {
+                      {
+                        int res = SWIG_AsVal_int(argv[9], NULL);
+                        _v = SWIG_CheckState(res);
+                      }
+                      if (_v) {
+                        return _wrap_inertial_shaker__SWIG_2(self, argc, argv);
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  if (argc == 11) {
+    int _v = 0;
+    _v = (argv[0] != 0);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_int(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        {
+          int res = SWIG_AsVal_int(argv[2], NULL);
+          _v = SWIG_CheckState(res);
+        }
+        if (_v) {
+          {
+            int res = SWIG_AsVal_double(argv[3], NULL);
+            _v = SWIG_CheckState(res);
+          }
+          if (_v) {
+            _v = (argv[4] != 0);
+            if (_v) {
+              _v = (argv[5] != 0);
+              if (_v) {
+                {
+                  int res = SWIG_AsVal_double(argv[6], NULL);
+                  _v = SWIG_CheckState(res);
+                }
+                if (_v) {
+                  {
+                    int res = SWIG_AsVal_double(argv[7], NULL);
+                    _v = SWIG_CheckState(res);
+                  }
+                  if (_v) {
+                    {
+                      int res = SWIG_AsVal_int(argv[8], NULL);
+                      _v = SWIG_CheckState(res);
+                    }
+                    if (_v) {
+                      {
+                        int res = SWIG_AsVal_int(argv[9], NULL);
+                        _v = SWIG_CheckState(res);
+                      }
+                      if (_v) {
+                        {
+                          int res = SWIG_AsVal_bool(argv[10], NULL);
+                          _v = SWIG_CheckState(res);
+                        }
+                        if (_v) {
+                          return _wrap_inertial_shaker__SWIG_1(self, argc, argv);
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  if (argc == 12) {
+    int _v = 0;
+    _v = (argv[0] != 0);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_int(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        {
+          int res = SWIG_AsVal_int(argv[2], NULL);
+          _v = SWIG_CheckState(res);
+        }
+        if (_v) {
+          {
+            int res = SWIG_AsVal_double(argv[3], NULL);
+            _v = SWIG_CheckState(res);
+          }
+          if (_v) {
+            _v = (argv[4] != 0);
+            if (_v) {
+              _v = (argv[5] != 0);
+              if (_v) {
+                {
+                  int res = SWIG_AsVal_double(argv[6], NULL);
+                  _v = SWIG_CheckState(res);
+                }
+                if (_v) {
+                  {
+                    int res = SWIG_AsVal_double(argv[7], NULL);
+                    _v = SWIG_CheckState(res);
+                  }
+                  if (_v) {
+                    {
+                      int res = SWIG_AsVal_int(argv[8], NULL);
+                      _v = SWIG_CheckState(res);
+                    }
+                    if (_v) {
+                      {
+                        int res = SWIG_AsVal_int(argv[9], NULL);
+                        _v = SWIG_CheckState(res);
+                      }
+                      if (_v) {
+                        {
+                          int res = SWIG_AsVal_bool(argv[10], NULL);
+                          _v = SWIG_CheckState(res);
+                        }
+                        if (_v) {
+                          {
+                            int res = SWIG_AsVal_bool(argv[11], NULL);
+                            _v = SWIG_CheckState(res);
+                          }
+                          if (_v) {
+                            return _wrap_inertial_shaker__SWIG_0(self, argc, argv);
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+fail:
+  SWIG_Python_RaiseOrModifyTypeError("Wrong number or type of arguments for overloaded function 'inertial_shaker'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    inertial_shaker(PyObject *,int,int,double,PyObject *,PyObject *,double,double,int,int,bool,bool)\n"
+    "    inertial_shaker(PyObject *,int,int,double,PyObject *,PyObject *,double,double,int,int,bool)\n"
+    "    inertial_shaker(PyObject *,int,int,double,PyObject *,PyObject *,double,double,int,int)\n"
+    "    inertial_shaker(PyObject *,int,int,double,PyObject *,PyObject *,double,double,int)\n"
+    "    inertial_shaker(PyObject *,int,int,double,PyObject *,PyObject *,double,double)\n"
+    "    inertial_shaker(PyObject *,int,int,double,PyObject *,PyObject *,double)\n"
+    "    inertial_shaker(PyObject *,int,int,double,PyObject *,PyObject *)\n"
+    "    inertial_shaker(PyObject *,int,int,double,PyObject *)\n"
+    "    inertial_shaker(PyObject *,int,int,double)\n"
+    "    inertial_shaker(PyObject *,int,int)\n"
+    "    inertial_shaker(PyObject *,int)\n");
   return 0;
 }
 
 
 static PyMethodDef SwigMethods[] = {
-	 { "ras_solver", _wrap_ras_solver, METH_VARARGS, NULL},
+	 { "reactive_affine_shaker", _wrap_reactive_affine_shaker, METH_VARARGS, NULL},
+	 { "inertial_shaker", _wrap_inertial_shaker, METH_VARARGS, NULL},
 	 { NULL, NULL, 0, NULL }
 };
 
